@@ -25,46 +25,21 @@
             <!-- Navigation Menu-->
             <ul class="navigation-menu">
                 <li class="has-submenu">
-                    <a href="#">Home</a><span class="menu"></span>
+                    <a href="#">Trang Chủ</a><span class="menu"></span>
                 </li>
 
                 <li class="has-submenu">
-                    <a href="javascript:void(0)">About</a><span class="menu-arrow"></span>
-                    <ul class="submenu">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li class="has-submenu"><a href="javascript:void(0)">Services</a><span class="submenu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="service.html">Services</a></li>
-                                <li><a href="service-image.html">Service With Image</a></li>
-                                <li><a href="service-detail.html">Single Service</a></li>
-                            </ul>
-                        </li>  
-                        <li class="has-submenu"><a href="javascript:void(0)">Team Members</a><span class="submenu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="team-grid.html">Grid Teams</a></li>
-                                <li><a href="team-list.html">List Teams</a></li>
-                                <li><a href="team-detail.html">Single Team</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-submenu"><a href="javascript:void(0)">Work</a><span class="submenu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="work-col-three.html">Three Column Portfolio</a></li>                                 
-                                <li><a href="work-col-four.html">Four Column Portfolio</a></li>                                 
-                                <li><a href="work-col-six.html">Six Column Portfolio</a></li>                                 
-                                <li><a href="work-single.html">Single Portfolio</a></li>                                
-                            </ul>
-                        </li>
-                    </ul> 
+                    <a href="javascript:void(0)">Giới Thiệu</a><span class="menu-arrow"></span>
+                   
                 </li>
 
                 <li class="has-submenu">
-                    <a href="javascript:void(0)">Thể Loại</a>
+                    <a href="javascript:void(0)">Template</a>
                     <span class="menu-arrow"></span>
                     <ul class="submenu megamenu">
                         <li>
                             <ul>
-                                <li><a href="faq.html"><b class="mdi mdi-chevron-right"></b> FAQ's</a></li>
+                                <li><a href=""><b class="mdi mdi-chevron-right"></b> Loại Temp</a></li>
                                 
                             </ul>
                         </li>
