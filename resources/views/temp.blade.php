@@ -60,54 +60,6 @@
                         </div>
                         <!-- TAG -->
 
-                        <!-- Recent Post -->
-                        <!-- <div class="sidebar p-30">
-                            <div class="widget">
-                                <h4 class="text-uppercase text-center">Template cùng loại</h4>
-                                <div class="slider single">
-                                    <div>
-                                        <a href="#"><img src="assets/images/blog/blog-1.jpg" class="mx-auto d-block img-fluid" alt="img-missing"></a>
-                                        <div class="spacer-15"></div>
-                                        <a href="#"><h4 class="pr-2 pl-2">The business woman hard work</h4></a>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img src="assets/images/blog/blog-2.jpg" class="mx-auto d-block img-fluid" alt="img-missing"></a>
-                                        <div class="spacer-15"></div>
-                                        <a href="#"><h4 class="pr-2 pl-2">Business adviser analyzing financial</h4></a>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img src="assets/images/blog/blog-3.jpg" class="mx-auto d-block img-fluid" alt="img-missing"></a>
-                                        <div class="spacer-15"></div>
-                                        <a href="#"><h4 class="pr-2 pl-2">The progress work of the company</h4></a>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img src="assets/images/blog/blog-4.jpg" class="mx-auto d-block img-fluid" alt="img-missing"></a>
-                                        <div class="spacer-15"></div>
-                                        <a href="#"><h4 class="pr-2 pl-2">Various Sources of Expand Business</h4></a>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img src="assets/images/blog/blog-5.jpg" class="mx-auto d-block img-fluid" alt="img-missing"></a>
-                                        <div class="spacer-15"></div>
-                                        <a href="#"><h4 class="pr-2 pl-2">How to Maintain Your Business?</h4></a>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img src="assets/images/blog/blog-6.jpg" class="mx-auto d-block img-fluid" alt="img-missing"></a>
-                                        <div class="spacer-15"></div>
-                                        <a href="#"><h4 class="pr-2 pl-2">Discussion Business Meeting</h4></a>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img src="assets/images/blog/blog-7.jpg" class="mx-auto d-block img-fluid" alt="img-missing"></a>
-                                        <div class="spacer-15"></div>
-                                        <a href="#"><h4 class="pr-2 pl-2">Analysis of Last Year Financial Report</h4></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                                 -->
-                        <!-- Recent Post -->
-
-                      
-
-                       
                     </div>
                     <!-- SIDEBAR -->
 
@@ -143,12 +95,12 @@
                         <div class="sidebar p-30">
                             <div class="widget">
                                <div class="row">
-                                   <div class="col-lg-6 col-md-4 mb-3 border ">
-                                   <a href="#" class="btn btn-buttons btn-red  mb-3 btn-round "> <i class="fa fa-eye" aria-hidden="true"></i> XEM THỬ</a>
+                                   <div class="col-lg-6 col-md-4 mb-3 goit">
+                                   <a href="#" class="btn btn-buttons  mb-3 btn-round"> <i class="fa fa-eye" aria-hidden="true"></i> XEM THỬ</a>
                                    </div>
 
-                                   <div class="col-lg-6 col-md-4 border ">
-                                   <a href="#" class="btn btn-buttons btn-green mr-3  btn-round "> <i class="fa fa-download" aria-hidden="true"></i> TÀI VỀ</a>
+                                   <div class="col-lg-6 col-md-4 down">
+                                   <a href="#" class="btn btn-buttons mr-3 btn-round down"> <i class="fa fa-download" aria-hidden="true"></i> TÀI VỀ</a>
                                    </div>
                                </div>
                             </div>
@@ -156,9 +108,8 @@
                         <!-- FOLLOW -->
                             </div>
                             
-                        </article>                        
+                        </article>
 
-                                      
                         <!-- Post End -->
                     </div>
                 </div>
