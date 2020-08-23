@@ -1,0 +1,22 @@
+
+.goit{
+    padding-top: 3%;
+    text-align: center !important;
+}
+.down{
+    padding-top: 3%;
+    text-align: center !important;
+}
+
+.goit a{
+    background-color: #e67e22 !important;
+}
+.down a{
+    background-color: #16a085 !important;
+}
+.goit:hover a{
+    background-color: #f39c12 !important;
+}
+.down:hover a{
+    background-color: #1abc9c !important;
+}
