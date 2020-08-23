@@ -1,3 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!--  41:50-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Multipurpose HTML5 Business Template">
+    <meta name="author" content="Shreethemes">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <title>Alita - A Responsive Multipurpose HTML Template</title>
+    <base href="{{asset('/')}}">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Magnificpopup Css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet">
+
+    <!--Slider-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/> 
+    <link rel="stylesheet" href="assets/css/owl.theme.css"/> 
+    <link rel="stylesheet" href="assets/css/owl.transitions.css"/>
+    <link rel="stylesheet" href="assets/css/slick.css"/> 
+    <link rel="stylesheet" href="assets/css/slick-theme.css"/>  
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/menu.css" rel="stylesheet">
+    <link href="assets/css/default.css" rel="stylesheet">
+
+</head>
+
+<body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
 <!-- Navigation Bar-->
 <div class="tagline hidden-md">
     <div class="container">
@@ -24,24 +79,4 @@
 <!-- End Navigation Bar-->
 
 <!-- HOME START-->
-<section class="bg-home" style="background-image:url('assets/images/home/bg-home.jpg');">
-    <div class="bg-overlay"></div>
-    <div class="home-center">
-        <div class="home-desc-center">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="title-heading text-center">
-                            <h1 class="">Financial Planners</h1>
-                            <p class="text-white-50 mx-auto">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
-                            <div class="mt-3">
-                                <a href="#" class="btn btn-custom mr-3">Contact Us</a>
-                                <a href="#" class="btn btn-outline-white">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@yield('slide')

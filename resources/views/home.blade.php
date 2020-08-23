@@ -1,58 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
 
-<!--  41:50-->
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive Multipurpose HTML5 Business Template">
-    <meta name="author" content="Shreethemes">
-
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-    <title>Alita - A Responsive Multipurpose HTML Template</title>
-    <base href="{{asset('/')}}">
-
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Magnificpopup Css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
-    <link href="assets/css/fontawesome.css" rel="stylesheet">
-    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet">
-
-    <!--Slider-->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/> 
-    <link rel="stylesheet" href="assets/css/owl.theme.css"/> 
-    <link rel="stylesheet" href="assets/css/owl.transitions.css"/>
-    <link rel="stylesheet" href="assets/css/slick.css"/> 
-    <link rel="stylesheet" href="assets/css/slick-theme.css"/>  
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/menu.css" rel="stylesheet">
-    <link href="assets/css/default.css" rel="stylesheet">
-
-</head>
-
-    <body>
-        <!-- Loader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div>
 
         @yield('header')
 
@@ -794,28 +742,3 @@
 
         @yield('footer')
 
-        <!-- js placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Portfolio -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/isotope.js"></script>
-        <script src="assets/js/portfolio-filter.js"></script> 
-        <!-- Carousel -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/owlcarousel.init.js"></script>
-        <script src="assets/js/slick.min.js"></script> 
-        <script src="assets/js/slick.init.js"></script> 
-        <!-- VIDEO ICON -->
-        <script src="assets/js/magnific.init.js"></script>
-        <!-- COUNTER -->
-        <script src="assets/js/counter.init.js"></script>
-        <!--custom script-->
-        <script src="assets/js/app.js"></script>
-
-    </body>
-
-
-<!--  42:23-->
-</html>

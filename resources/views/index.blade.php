@@ -1,5 +1,6 @@
 @section('header')
     @include('header')
+    @include('slide')
     @include('menu')
 @endsection
 @extends("home")
