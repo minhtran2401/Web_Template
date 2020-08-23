@@ -39,7 +39,7 @@
                     <ul class="submenu megamenu">
                         <li>
                             <ul>
-                                <li><a href=""><b class="mdi "></b> Loại Temp</a></li>
+                                <li><a href="categories"><b class="mdi "></b> Loại Temp</a></li>
                                 
                             </ul>
                         </li>
