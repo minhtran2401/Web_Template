@@ -255,7 +255,7 @@
         <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="team-box mt-0">
                             <div class="team-box-img">
                                 <img src="assets/images/team/image-1.jpg" alt="" class="img-fluid">
@@ -276,28 +276,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-box mt-0">
-                            <div class="team-box-img">
-                                <img src="assets/images/team/image-2.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="team-info text-center">
-                                <h3 class="mb-0">Samuel Shelton</h3>
-                                <small class="text-muted">Co-Founder</small>
-                            </div>
-                            <div class="team-members-overlay">
-                                <div class="text-center mt-2">
-                                    <ul class="list-unstyled team-icon">
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-apple"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
+                   
+                    <div class="col-lg-4 col-md-6">
                         <div class="team-box mt-0">
                             <div class="team-box-img">
                                 <img src="assets/images/team/image-3.jpg" alt="" class="img-fluid">
@@ -318,7 +298,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="team-box mt-0">
                             <div class="team-box-img">
                                 <img src="assets/images/team/image-4.jpg" alt="" class="img-fluid">
