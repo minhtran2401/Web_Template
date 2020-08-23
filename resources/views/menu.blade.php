@@ -34,7 +34,7 @@
                 </li>
 
                 <li class="has-submenu">
-                    <a href="javascript:void(0)">Template </a>
+                    <a href="categories">Template </a>
                     <span class="menu-arrow"></span>
                     <ul class="submenu megamenu">
                         <li>

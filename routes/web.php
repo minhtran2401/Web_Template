@@ -28,3 +28,8 @@ Route::get('/about', function () {
 Route::get('/categories', function () {
     return view('categories');
 });
+
+
+Route::get('/temp', function () {
+    return view('temp');
+});
