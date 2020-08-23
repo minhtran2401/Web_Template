@@ -495,7 +495,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="team-box mt-30">
                             <div class="team-box-img">
                                 <img src="assets/images/team/image-1.jpg" alt="" class="img-fluid">
@@ -514,7 +514,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="team-box mt-30">
                             <div class="team-box-img">
                                 <img src="assets/images/team/image-2.jpg" alt="" class="img-fluid">
@@ -533,7 +533,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="team-box mt-30">
                             <div class="team-box-img">
                                 <img src="assets/images/team/image-3.jpg" alt="" class="img-fluid">
@@ -552,25 +552,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-box mt-30">
-                            <div class="team-box-img">
-                                <img src="assets/images/team/image-4.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="team-info text-center">
-                                <h3 class="mb-0">Lisa Mark</h3>
-                                <small class="text-muted">Graphics Designer</small>
-                                <div class="text-center mt-3">
-                                    <ul class="list-unstyled social-icon mb-0">
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-apple"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>

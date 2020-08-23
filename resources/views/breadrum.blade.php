@@ -7,8 +7,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-12">
                                 <div class="page-next-level text-white">
-                                    <h4 class="text-uppercase">Get In Touch</h4>
-                                    <div class="page-next"> <a href="index-2.html">Home</a> <i class="mdi mdi-chevron-right"></i> &nbsp;<a href="#">Pages</a> <i class="mdi mdi-chevron-right"></i> &nbsp;<span>Contact Us</span> </div>
+                                    <h4 class="text-uppercase">Đây là Breadrum</h4>
+                                    <div class="page-next"> <a href="">Home</a> <i class="mdi mdi-chevron-right"></i> &nbsp;<a href="#">Pages</a> <i class="mdi mdi-chevron-right"></i> &nbsp;<span>Breadrum</span> </div>
                                 </div>
                             </div>  
                         </div>

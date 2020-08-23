@@ -2,7 +2,7 @@
     <div class="container">
         <!-- Logo container-->
         <div>
-            <a href="index-2.html" class="logo">
+            <a href="" class="logo">
                 <img src="assets/images/logo.png" alt="missing_logo" height="20">
             </a>
         </div>
@@ -29,17 +29,17 @@
                 </li>
 
                 <li class="has-submenu">
-                    <a href="javascript:void(0)">Giới Thiệu</a><span class="menu-arrow"></span>
+                    <a href="about">Giới Thiệu</a><span class="menu"></span>
                    
                 </li>
 
                 <li class="has-submenu">
-                    <a href="javascript:void(0)">Template</a>
+                    <a href="javascript:void(0)">Template </a>
                     <span class="menu-arrow"></span>
                     <ul class="submenu megamenu">
                         <li>
                             <ul>
-                                <li><a href=""><b class="mdi mdi-chevron-right"></b> Loại Temp</a></li>
+                                <li><a href=""><b class="mdi "></b> Loại Temp</a></li>
                                 
                             </ul>
                         </li>
@@ -47,7 +47,11 @@
                 </li>
 
                 <li class="has-submenu">
-                    <a href="javascript:void(0)">Themes Wordpress</a>
+                    <a href="javascript:void(0)">Template Admin</a>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="javascript:void(0)">Template Wordpress</a>
                 </li>
 
                 <li class="has-submenu">
@@ -62,7 +66,7 @@
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-search">
                         <div>
                             <form role="search" class="navbar-form">
-                                <input type="text" placeholder="Search..." name="s" class="form-control search-bar">
+                                <input type="text" placeholder="Tìm kiếm" name="s" class="form-control search-bar">
                                 <a href="#" class="btn-search"><i class="fa fa-search"></i></a>
                             </form>
                         </div>

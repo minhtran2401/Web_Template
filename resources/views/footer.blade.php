@@ -89,7 +89,9 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <p class="copy-rights text-white mb-0"><a href="" target="_blank">TNM</a></p>
+                                <p class="copy-rights text-white mb-0"><a href="" target="_blank">TNM </a> 
+                                - <a href="">NVT</a> - <a href="">NTT</a> Made with love ♥
+                            </p>
                             </div>
                         </div>
                     </div>
