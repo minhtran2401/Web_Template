@@ -862,7 +862,7 @@
                             <h5 class="text-light text-uppercase font-22">Do You Want To Work With Alita ?</h5>
                             <div class="spacer-30"></div>
                             <div>
-                                <a href="contact.html" class="btn btn-custom-white">Contact Us</a>
+                                <a href="contact" class="btn btn-custom-white">Contact Us</a>
                             </div>
                         </div>
                     </div>
