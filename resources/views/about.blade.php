@@ -1,4 +1,6 @@
 @section("header")
+@section('pagetitle', 'LOGO | Giới Thiệu')
+
     @include("header")
     @include("menu")   
     @include("breadrum")

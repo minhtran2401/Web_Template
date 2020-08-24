@@ -1,4 +1,6 @@
 @section("header")
+@section('pagetitle', 'LOGO | Liên Hệ')
+
     @include("header")
     @include("menu")   
     @include("breadrum")
@@ -37,7 +39,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group app-label">
-                                            <input name="email" id="email" type="email" class="form-control" placeholder="Email Bạn : :">
+                                            <input name="email" id="email" type="email" class="form-control" placeholder="Email  :">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
