@@ -10,7 +10,7 @@
                                     <img src="assets/images/logo-white.png" alt="missing_logo" height="20">
                                 </a>
                             </div>
-                            <p class="text-footer-clr mt-3">These cases are perfectly simple and easy to free hour, when nothing prevents distinguish.</p>
+                            <p class="text-footer-clr mt-3">Website của chúng tôi luôn mang đến cho bạn những sản phẩm mới mẻ, giao diện đẹp và đầy tính năng thú vị.</p>
                             <div>
                                 <ul class="list-unstyled social-icon">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-apple"></i></a></li>
@@ -23,14 +23,14 @@
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-4">
                             <div class="footer-head">
-                                <h5 class="text-light">Company</h5>
+                                <h5 class="text-light">Công ty</h5>
                             </div>
                             <div class="footer-item mt-3">
                                 <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> About us</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Services</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Portfolio</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> News</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Về chúng tôi</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Dịch vụ</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Chính sách</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Tin tức</a></li>
                                     <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> FAQ</a></li>
                                 </ul>
                             </div>
@@ -41,10 +41,10 @@
                             </div>
                             <div class="footer-item mt-3">
                                 <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Accounts</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Sales & Support</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Orders Track</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Download Center</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Tài Khoản</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Trao đổi & Hỗ trợ</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Theo dõi đơn hàng</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Trung tâm</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -54,23 +54,23 @@
                             </div>
                             <div class="footer-item mt-3">
                                 <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Portfolio</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Contact Us</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Blog</a></li>
-                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Help Center</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Danh mục đầu tư</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Liên hệ</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> bài viết</a></li>
+                                    <li><a href="#"><i class="fas fa-chevron-right mr-2"></i> Trung tâm trợ giúp</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="footer-head">
-                                <h5 class="text-light">Newsletter</h5>
+                                <h5 class="text-light">Bản tin</h5>
                             </div>
                             <div class="footer-news mt-3">
-                                <p class="text-footer-clr">Subscribe to our email newsletter to receive useful articles and special offers.</p>
+                                <p class="text-footer-clr">Đăng kí bản tin của chúng tôi qua email của bạn để nhận thông báo về sản phẩm mới nhất.</p>
                                 <div class="subscribed-form">
                                     <div class="subcribed-form">
                                         <form action="#">
-                                            <input name="email" type="email" placeholder="Your Email" id="email" required="">
+                                            <input name="email" type="email" placeholder="Email bạn" id="email" required="">
                                             <button type="submit" class=""><span class="fab fa-telegram-plane"></span></button>
                                         </form>
                                     </div>
@@ -90,7 +90,7 @@
                         <div class="col-lg-12">
                             <div class="text-center">
                                 <p class="copy-rights text-white mb-0"><a href="" target="_blank">TNM </a> 
-                                - <a href="">NVT</a> - <a href="">NTT</a> Made with love ♥
+                                - <a href="">NVT</a> - <a href="">NTT</a> Xây dựng với đam mê ♥
                             </p>
                             </div>
                         </div>
