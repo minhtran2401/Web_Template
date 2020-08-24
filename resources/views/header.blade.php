@@ -12,7 +12,7 @@
 
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-    <title>Alita - A Responsive Multipurpose HTML Template</title>
+    <title>@yield('pagetitle')</title>
     <base href="{{asset('/')}}">
 
 

@@ -1,4 +1,6 @@
 @section('header')
+@section('pagetitle', 'LOGO | Tên Template')
+
     @include('header')
     @include('menu')
     @include('breadrum')

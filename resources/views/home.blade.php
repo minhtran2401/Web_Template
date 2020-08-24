@@ -226,13 +226,14 @@
                         <div class="text-center">
                            
 
-                            <ul class="col container-filter nav nav-pills mb-3 portfolioFilter list-unstyled " id="pills-tab" role="tablist">
+                            <ul class="col container-filter nav nav-pills mb-3  list-unstyled "   id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Loại 1</a>
                                 </li>
+                            
                                 <li class="nav-item" role="presentation">
                                     <a class="nav-link" id="pills-type1-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Loại 2</a>
-                                </li>
+                                </li>   
                                 <li class="nav-item" role="presentation">
                                     <a class="nav-link" id="pills-type2-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Loại 3</a>
                                 </li>
