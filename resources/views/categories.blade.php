@@ -44,113 +44,21 @@
     <div class="container">
         <div class="port portfolio-masonry mt-3">
             <div class="portfolioContainer row">
+
+                @foreach ($kq ?? '' as $r)
                 <div class="col-lg-4 col-md-6 part">
                     <div class="portfolio-box">
                         <a class="mfp-image" href="assets/images/work/work-1.jpg" title="Business Post">
-                            <img src="assets/images/work/work-1.jpg" class="img-fluid" alt="member-image">
+                            <img src="{{$r->image}}" class="img-fluid" alt="member-image">
                         </a>
                         <div class="gallary-title text-center">
-                            <h6><a href="work-single.html">Project Name</a></h6>
-                            <span class="text-muted">Catagories</span>
+                            <h6><a href="work-single.html">{{$r->name}}</a></h6>
+                            {{-- <span class="text-muted">{{$r->name_type}}</span> --}}
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6 part">
-                    <div class="portfolio-box">
-                        <a class="mfp-image" href="assets/images/work/work-2.jpg" title="Business Post">
-                            <img src="assets/images/work/work-2.jpg" class="img-fluid" alt="member-image">
-                        </a>
-                        <div class="gallary-title text-center">
-                            <h6><a href="work-single.html">Project Name</a></h6>
-                            <span class="text-muted">Catagories</span>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
 
-                <div class="col-lg-4 col-md-6 account">
-                    <div class="portfolio-box">
-                        <a class="mfp-image" href="assets/images/work/work-3.jpg" title="Business Post">
-                            <img src="assets/images/work/work-3.jpg" class="img-fluid" alt="member-image">
-                        </a>
-                        <div class="gallary-title text-center">
-                            <h6><a href="work-single.html">Project Name</a></h6>
-                            <span class="text-muted">Catagories</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 account">
-                    <div class="portfolio-box">
-                        <a class="mfp-image" href="assets/images/work/work-4.jpg" title="Business Post">
-                            <img src="assets/images/work/work-4.jpg" class="img-fluid" alt="member-image">
-                        </a>
-                        <div class="gallary-title text-center">
-                            <h6><a href="work-single.html">Project Name</a></h6>
-                            <span class="text-muted">Catagories</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 marketing">
-                    <div class="portfolio-box">
-                        <a class="mfp-image" href="assets/images/work/work-5.jpg" title="Business Post">
-                            <img src="assets/images/work/work-5.jpg" class="img-fluid" alt="member-image">
-                        </a>
-                        <div class="gallary-title text-center">
-                            <h6><a href="work-single.html">Project Name</a></h6>
-                            <span class="text-muted">Catagories</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 marketing">
-                    <div class="portfolio-box">
-                        <a class="mfp-image" href="assets/images/work/work-6.jpg" title="Business Post">
-                            <img src="assets/images/work/work-6.jpg" class="img-fluid" alt="member-image">
-                        </a>
-                        <div class="gallary-title text-center">
-                            <h6><a href="work-single.html">Project Name</a></h6>
-                            <span class="text-muted">Catagories</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 finance">
-                    <div class="portfolio-box">
-                        <a class="mfp-image" href="assets/images/work/work-7.jpg" title="Business Post">
-                            <img src="assets/images/work/work-7.jpg" class="img-fluid" alt="member-image">
-                        </a>
-                        <div class="gallary-title text-center">
-                            <h6><a href="work-single.html">Project Name</a></h6>
-                            <span class="text-muted">Catagories</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 finance">
-                    <div class="portfolio-box">
-                        <a class="mfp-image" href="assets/images/work/work-8.jpg" title="Business Post">
-                            <img src="assets/images/work/work-8.jpg" class="img-fluid" alt="member-image">
-                        </a>
-                        <div class="gallary-title text-center">
-                            <h6><a href="work-single.html">Project Name</a></h6>
-                            <span class="text-muted">Catagories</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 finance">
-                    <div class="portfolio-box">
-                        <a class="mfp-image" href="assets/images/work/work-9.jpg" title="Business Post">
-                            <img src="assets/images/work/work-9.jpg" class="img-fluid" alt="member-image">
-                        </a>
-                        <div class="gallary-title text-center">
-                            <h6><a href="work-single.html">Project Name</a></h6>
-                            <span class="text-muted">Catagories</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

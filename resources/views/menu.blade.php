@@ -39,7 +39,8 @@
                     <ul class="submenu megamenu">
                         <li>
                             <ul>
-                                <li><a href="categories"><b class="mdi "></b> Loại Temp</a></li>
+                                <li><a href="{{action("TemptheoloaiController@temptheoloai",['id_temp'=>1])}}"><b class="mdi "> Giáo dục</b></a></li>
+                                <li><a href="{{action("TemptheoloaiController@temptheoloai",['id_temp'=>2])}}"><b class="mdi "> Doanh nghiệp</b> </a></li>
                                 
                             </ul>
                         </li>
