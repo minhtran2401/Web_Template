@@ -8,44 +8,8 @@
         <section class="section-two bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="feature">
-                            <div class="fe-icon">
-                                <i class="fas fa-globe float-left"></i>
-                            </div>
-                            <div class="fe-head">
-                                <h4>Hign Performance</h4>
-                                <p class="text-muted mb-0">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled</p>
-                                <span>01.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="feature">
-                            <div class="fe-icon">
-                                <i class="fas fa-hands-helping float-left"></i>
-                            </div>
-                            <div class="fe-head">
-                                <h4>Trusted Partners</h4>
-                                <p class="text-muted mb-0">It is a long established fact that a reader will be distracted by the readable content of at its layout.</p>
-                                <span>02.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="feature">
-                            <div class="fe-icon">
-                                <i class="fas fa-chart-line float-left"></i>
-                            </div>
-                            <div class="fe-head">
-                                <h4>Well Organized</h4>
-                                <p class="text-muted mb-0">Many desktop publishing packages and web page editors now use Lorem Ipsum as their text, and a search.</p>
-                                <span>03.</span>
-                            </div>
-                        </div>
-                    </div>
+                    <?php $idType = 1 ?> @include ("tempmoitheoloai")
+                    <?php $idType = 2 ?> @include ("tempmoitheoloai")
                 </div>
             </div>
         </section>
