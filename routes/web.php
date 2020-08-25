@@ -27,9 +27,12 @@ Route::get('/categories', function () {
     return view('categories');
 });
 
-
 Route::get('/temp', function () {
     return view('temp');
 });
 
 Route::get('temp/{id}', 'TempController@temp');
+
+//-----controller------//
+// trang temp theo loại:
+Route::get('categories/{id_temp}', 'TemptheoloaiController@temptheoloai');
