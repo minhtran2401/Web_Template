@@ -55,10 +55,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-custom w-100" value="Gửi">
+                                        <input href="#myModal" type="submit" id="submit" name="send" class="submitBnt btn btn-custom w-100" value="Gửi">
                                         <div id="simple-msg"></div>
                                     </div>
                                 </div>
+
+
+
                             </form>
                         </div>
                     </div>

@@ -1,7 +1,20 @@
 
 
 
+<?php
+     $tem = DB::table('template')
+    ->select(DB::raw('count(*) as tem_count, id_temp'))
+    ->where('id_temp', '<>', 0)
+    ->groupBy('id_temp')
+    ->get();
 
+    $type = DB::table('template_type')
+    ->select(DB::raw('count(*) as type_count, id_type'))
+    ->where('id_type', '<>', 0)
+    ->groupBy('id_type')
+    ->get();
+
+?>
         @yield('header')
 
         <section class="section-two bg-light">
@@ -304,37 +317,45 @@
         </section>
         <!-- TESTIMONIAL END -->
 
+        
+
         <!-- COUNTER START -->
         <section class="section bg-counter">
             <div class="bg-overlay"></div>
             <div class="container">
                 <div class="row" id="counter">
+
                     <div class="col-lg-3 col-md-3">
                         <div class="text-center counter-funfact p-4 mt-3 text-white">
-                            <i class="pe-7s-wristwatch counter-icon"></i>
-                            <h2 class="counter-value" data-count="654">4</h2>
-                            <p class="counter-name mb-0">Working Hours</p>
+                            <i class="pe-7s-box2 counter-icon"></i>
+                            <h2 class="counter-value" data-count="640">   {{$type->count()}}</h2>
+                            <p class="counter-name mb-0">Loại Khác Nhau</p>
                         </div>
                     </div>
+
                     <div class="col-lg-3 col-md-3">
-                        <div class="text-center counter-funfact left-border p-4 mt-3 text-white">
+                        <div class="text-center counter-funfact left-border  p-4 mt-3 text-white">
                             <i class="pe-7s-note2 counter-icon"></i>
-                            <h2 class="counter-value" data-count="640">10</h2>
-                            <p class="counter-name mb-0">Projects</p>
+                            
+                            <h2 class="counter-value" data-count="654">
+                               {{$tem->count()}}
+                              </h2>
+                            <p class="counter-name mb-0">Giao Diện</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3">
+                        <div class="text-center counter-funfact left-border p-4 mt-3 text-white">
+                            <i class="pe-7s-download counter-icon"></i>
+                            <h2 class="counter-value" data-count="238">356</h2>
+                            <p class="counter-name mb-0">Lượt Tải Xuống</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <div class="text-center counter-funfact left-border p-4 mt-3 text-white">
-                            <i class="pe-7s-users counter-icon"></i>
-                            <h2 class="counter-value" data-count="238">201</h2>
-                            <p class="counter-name mb-0">Clients</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="text-center counter-funfact left-border p-4 mt-3 text-white">
-                            <i class="pe-7s-wine counter-icon"></i>                      
-                            <h2 class="counter-value" data-count="532">2</h2>
-                            <p class="counter-name mb-0">Tea Cup</p>
+                            <i class="pe-7s-global counter-icon"></i>                      
+                            <h2 class="counter-value" data-count="532">1459</h2>
+                            <p class="counter-name mb-0">Lượt Truy Cập</p>
                         </div>
                     </div>
                 </div>
@@ -420,128 +441,7 @@
         </section>
         <!-- TEAM END -->
 
-        <!-- BLOG START -->
-        <section class="section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-12">
-                        <div class="section-title text-center">
-                            <h3>Our Blog</h3>
-                            <div class="spacer-15"></div>
-                            <p class="text-muted mb-0">Donec sodales sagittis magna. Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-                            <div class="spacer-30"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <article class="post mt-30">
-                            <div class="post-preview">
-                                <a href="#"><img src="assets/images/blog/blog-1.jpg" alt="" class="img-fluid mx-auto d-block"></a>
-                            </div>
-
-                            <div class="post-header">
-                                <h4 class="post-title"><a href="#"> The business woman hard work</a></h4>
-                                <ul class="post-meta">
-                                    <li><i class="mdi mdi-calendar"></i> <small>Fab 01, 2019</small></li>
-                                    <li><i class="mdi mdi-tag-text-outline"></i>
-                                        <a href="#"> <small>Branding</small></a></li>
-                                </ul>
-
-                                <div class="post-content">
-                                    <p class="text-muted">These cases are perfectly simple and easy to distinguish. In a free hour, when nothing prevents our being able to do what we like best.</p>
-                                </div>
-
-                                <span class="bar"></span>
-
-                                <div class="post-footer">
-                                    <div class="likes">
-                                        <ul class="post-meta">
-                                            <li><a href="#"><i class="far fa-heart mr-1"></i> <small>29</small></a></li>
-                                            <li><a href="#"> <i class="far fa-comment mr-1"></i>
-                                                 <small>40</small></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="post-more"><a href="#">Read More <i class="mdi mdi-arrow-right"></i></a></div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <article class="post mt-30">
-                            <div class="post-preview">
-                                <a href="#"><img src="assets/images/blog/blog-2.jpg" alt="" class="img-fluid mx-auto d-block"></a>
-                            </div>
-
-                            <div class="post-header">
-                                <h4 class="post-title"><a href="#">Business adviser analyzing financial</a></h4>
-                                <ul class="post-meta">
-                                    <li><i class="mdi mdi-calendar"></i> <small>Fab 01, 2019</small></li>
-                                    <li><i class="mdi mdi-tag-text-outline"></i>
-                                        <a href="#"> <small>Media</small></a></li>
-                                </ul>
-                                <div class="post-content">
-                                    <p class="text-muted">These cases are perfectly simple and easy to distinguish. In a free hour, when nothing prevents our being able to do what we like best.</p>
-                                </div>
-
-                                <span class="bar"></span>
-
-                                <div class="post-footer">
-                                    <div class="likes">
-                                        <ul class="post-meta">
-                                            <li><a href="#"><i class="far fa-heart mr-1"></i> <small>29</small></a></li>
-                                            <li><a href="#"> <i class="far fa-comment mr-1"></i>
-                                                 <small>40</small></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="post-more"><a href="#">Read More <i class="mdi mdi-arrow-right"></i></a></div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                        
-                    <div class="col-md-4">
-                        <article class="post mt-30">
-                            <div class="post-preview">
-                                <a href="#"><img src="assets/images/blog/blog-3.jpg" alt="" class="img-fluid mx-auto d-block"></a>
-                            </div>
-
-                            <div class="post-header">
-                                <h4 class="post-title"><a href="#">The progress work of the company</a></h4>
-                                <ul class="post-meta">
-                                    <li><i class="mdi mdi-calendar"></i> <small>Fab 01, 2019</small></li>
-                                    <li><i class="mdi mdi-tag-text-outline"></i>
-                                        <a href="#"> <small>Tree</small></a></li>
-                                </ul>
-
-                                <div class="post-content">
-                                    <p class="text-muted">These cases are perfectly simple and easy to distinguish. In a free hour, when nothing prevents our being able to do what we like best.</p>
-                                </div>
-
-                                <span class="bar"></span>
-
-                                <div class="post-footer">
-                                    <div class="likes">
-                                        <ul class="post-meta">
-                                            <li><a href="#"><i class="far fa-heart mr-1"></i> <small>29</small></a></li>
-                                            <li><a href="#"> <i class="far fa-comment mr-1"></i>
-                                                 <small>40</small></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="post-more"><a href="#">Read More <i class="mdi mdi-arrow-right"></i></a></div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- BLOG END -->
+        
 
         <!-- PARTNER START -->
         <section class="section-two bg-light">
