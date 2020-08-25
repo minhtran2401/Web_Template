@@ -32,10 +32,11 @@
                             <div class="widget widget_categories">
                                 <h4 class="text-uppercase text-center">Template</h4>
                                 <ul class="list-unstyled">
-                                    <li class="mb-2"><a href="#">Consulting</a> <span class="float-right">(40)</span></li>
-                                    <li class="mb-2"><a href="#">Finance</a> <span class="float-right">(08)</span></li>
-                                    <li class="mb-2"><a href="#">Marketing</a> <span class="float-right">(11)</span></li>
-                                    <li><a href="#">Services</a> <span class="float-right">(21)</span></li>
+                                    @foreach ($loaitemp as $loai)
+                                        
+                                  
+                                <li class="mb-2"><a href="#">{{$loai->name_type}}</a> <span class="float-right">(1)</span></li>
+                                @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -46,17 +47,12 @@
                             <div class="widget">
                                 <h4 class="text-uppercase text-center">Tags</h4>
                                 <div class="text-center tagcloud">
-                                    <a href="#">Consulting</a>
-                                    <a href="#">Finance</a>
-                                    <a href="#">Marketing</a>
-                                    <a href="#">Services</a>
-                                    <a href="#">Portfolio</a>
-                                    <a href="#">Fashion</a>
-                                    <a href="#">Lifestyle</a>
-                                    <a href="#">Travel</a>
-                                    <a href="#">Blog</a>
-                                    <a href="#">Video</a>
-                                    <a href="#">Audio</a>
+                                    @foreach ($tags as $t)
+                                        
+                                  
+                                <a href="#">{{$t->name_tags}}</a>
+                                    @endforeach
+                                    
                                 </div>
                             </div>
                         </div>
@@ -75,26 +71,41 @@
 
                             <div class="post-header">
                                 <ul class="post-meta">
-                                    <li><i class="mdi mdi-calendar"></i> <small>Fab 01, 2019</small></li>
-                                    <li><i class="mdi mdi-tag-text-outline"></i>
-                                        <a href="#"> <small>Photography</small></a></li>
+                                    <li> <small class=" btn-outline-red mr-3 mb-3" > <i class="mdi mdi-calendar "></i> <?=date('d-m-20y',strtotime($template->Ngay))?></small></li>
+                                    <li><i class=""></i> <small class=" font-14 font-weight-bold  btn-outline-green mr-3 mb-3" >{{$template->name}}</small></li>
+
+                                    <li><i class="mdi mdi-text-outline"></i>
+                                        <a href="#"> <small class=" btn-outline-dark-green mr-3 mb-3"  >{{$template->name_type}}</small></a></li>
                                 </ul>
                                 
                                 <div class="post-content">
-                                    <p class="mb-0">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. </p>
+                                    <p class="header" style="color :red"  >Mô tả :</p>
+                                    <small>
+                                    <p class="mb-2">
+                                        {{$template->description}}
+                                    </p>
+                                </small>
                                 </div>
 
                                 <div class="post-content">
-                                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment.</p>
-                                </div>
-
+                                    <p class="header" style="color :green"  >Tags : <small style="color:grey" > 
+                                    
+                                        <?php
+                                        $tags = $template->tags;
+                                        $arr = explode(",",  $tags);
+                                ?>
                                 
-                                <div class="post-content">
-                                    <p>The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds contains a series of real Latin words. </p>
+                                @foreach ($arr as $t)
+                        
+                               <a href="" class="post-tags__link"> {{$t}}</a> 
+                               @endforeach
+                                    </small>   </p>
+                                    
                                 </div>
+                             
 
                                  <!-- FOLLOW -->
-                        <div class="sidebar p-30">
+                        <div class="sidebar p-30" style="border: none" >
                             <div class="widget">
                                <div class="row">
                                    <div class="col-lg-6 col-md-4 mb-3 goit">

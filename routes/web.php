@@ -33,3 +33,5 @@ Route::get('/categories', function () {
 Route::get('/temp', function () {
     return view('temp');
 });
+
+Route::get('temp/{id}', 'TempController@temp');
