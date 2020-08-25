@@ -33,6 +33,11 @@ Route::get('/temp', function () {
 
 Route::get('temp/{id}', 'TempController@temp');
 
+
+
 //-----controller------//
 // trang temp theo loại:
 Route::get('categories/{id_temp}', 'TemptheoloaiController@temptheoloai');
+
+Route::get('/#{id_temp}', 'homeController@temphome');
+

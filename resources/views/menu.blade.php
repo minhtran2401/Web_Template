@@ -39,8 +39,30 @@
                     <ul class="submenu megamenu">
                         <li>
                             <ul>
-                                <li><a href="{{action("TemptheoloaiController@temptheoloai",['id_temp'=>1])}}"><b class="mdi "> Giáo dục</b></a></li>
-                                <li><a href="{{action("TemptheoloaiController@temptheoloai",['id_temp'=>2])}}"><b class="mdi "> Doanh nghiệp</b> </a></li>
+
+                                <?php
+
+use Illuminate\Support\Facades\DB;
+
+$menu =DB::table('template_type')
+        ->select('id_type', 'name_type')
+        // ->where("idTL", $idTL)
+       
+        ->get();
+
+        
+    // $TenTL= DB::table ('theloai')
+    // ->where("idTL", $idTL)
+    // ->value("TenTL");
+  
+
+?>
+
+                                @foreach ($menu as $r)
+                                    
+                            <li><a href="{{action("TemptheoloaiController@temptheoloai",['id_temp'=>$r->id_type])}}"><b class="mdi "> {{$r->name_type}}</b></a></li>
+                             
+                                @endforeach
                                 
                             </ul>
                         </li>

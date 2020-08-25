@@ -4,16 +4,50 @@
 
         @yield('header')
 
-        <!-- FEATURES START -->
         <section class="section-two bg-light">
             <div class="container">
                 <div class="row">
-                    <?php $idType = 1 ?> @include ("tempmoitheoloai")
-                    <?php $idType = 2 ?> @include ("tempmoitheoloai")
+                    <div class="col-md-4">
+                        <div class="feature">
+                            <div class="fe-icon">
+                                <i class="fas fa-globe float-left"></i>
+                            </div>
+                            <div class="fe-head">
+                                <h4>Hign Performance</h4>
+                                <p class="text-muted mb-0">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled</p>
+                                <span>01.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature">
+                            <div class="fe-icon">
+                                <i class="fas fa-hands-helping float-left"></i>
+                            </div>
+                            <div class="fe-head">
+                                <h4>Trusted Partners</h4>
+                                <p class="text-muted mb-0">It is a long established fact that a reader will be distracted by the readable content of at its layout.</p>
+                                <span>02.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature">
+                            <div class="fe-icon">
+                                <i class="fas fa-chart-line float-left"></i>
+                            </div>
+                            <div class="fe-head">
+                                <h4>Well Organized</h4>
+                                <p class="text-muted mb-0">Many desktop publishing packages and web page editors now use Lorem Ipsum as their text, and a search.</p>
+                                <span>03.</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- FEATURES END -->
 
         <!-- ABOUT US START -->
         <section class="section">
@@ -172,292 +206,7 @@
         <!-- CTA END -->
 
         <!-- WORK START -->
-        <section class="section bg-light"> 
-            <div class="container"> 
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-12">
-                        <div class="section-title text-center">
-                            <h3>Our Portfolio</h3>
-                            <div class="spacer-15"></div>
-                            <p class="text-muted mb-0">Donec sodales sagittis magna. Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
-                            <div class="spacer-30"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="text-center">
-                           
-
-                            <ul class="col container-filter nav nav-pills mb-3  list-unstyled "   id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Loại 1</a>
-                                </li>
-                            
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="pills-type1-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Loại 2</a>
-                                </li>   
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="pills-type2-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Loại 3</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-
-            <div class="tab-content" id="pills-tabContent">
-         
-          
-
-
-            <div class="container-fluid tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-all-tab">
-                <div class="port portfolio-masonry mt-3">
-                    <div class="portfolioContainer row">
-                        <div class="col-lg-3 col-md-6 part" >
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-1.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-1.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6 part" >
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-2.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-2.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 account ">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-3.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-3.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6 account">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-4.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-4.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 marketing">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-5.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-5.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6 marketing">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-6.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-6.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 finance">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-7.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-7.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6 finance">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-8.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-8.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="text-center mt-30">
-                            <a href="categories" class="btn btn-custom">See More <i class="fas fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-type1-tab">
-                <div class="port portfolio-masonry mt-3">
-                    <div class="portfolioContainer row">
-                      
-                        
-                        <div class="col-lg-3 col-md-6 account">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-4.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-4.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 marketing">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-5.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-5.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6 marketing">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-6.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-6.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 finance">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-7.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-7.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6 finance">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-8.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-8.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="text-center mt-30">
-                            <a href="categories" class="btn btn-custom">See More <i class="fas fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="container-fluid tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-type2-tab">
-                <div class="port portfolio-masonry mt-3">
-                    <div class="portfolioContainer row">
-                      
-                        
-                        
-                        
-                        <div class="col-lg-3 col-md-6 marketing">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-6.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-6.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 finance">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-7.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-7.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6 finance">
-                            <div class="portfolio-box">
-                                <a class="mfp-image" href="assets/images/work/work-8.jpg" title="Business Post">
-                                    <img src="assets/images/work/work-8.jpg" class="img-fluid" alt="member-image">
-                                </a>
-                                <div class="gallary-title text-center">
-                                    <h6><a href="work-single.html">Project Name</a></h6>
-                                    <span class="text-muted">Catagories</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="text-center mt-30">
-                            <a href="categories" class="btn btn-custom">See More <i class="fas fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-            </div>
-
-
-        </section>
+        @include('tempmoitheoloai')
         <!-- WORK END -->
 
         <!-- TESTIMONIAL START-->
