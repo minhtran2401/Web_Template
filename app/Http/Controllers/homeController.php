@@ -12,7 +12,7 @@ class homeController extends Controller
     public function temptrongloai($idTemp, $pageNum=1){
         $kq = DB::table("template")
         ->select('id_temp', 'name', 'image')
-        ->join('tmplate_type', 'template.id_type', '=', 'template_type.id_type')
+        ->join('template_type', 'template.id_type', '=', 'template_type.id_type')
         ->where("template.id_type", $idType)
         ->where("template.Anhien",1)
         ->paginate(5);

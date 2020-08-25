@@ -1,5 +1,5 @@
 <?php
-    $typeName = DB::table('template_type')->where('id_type', $idType)->value('name');
+    $typeName = DB::table('template_type')->where('id_type', $idType)->value('name_type');
     $tempmoi = DB::table('template')
     ->select('id_temp', 'template.name', 'image')
     ->join('template_type','template.id_type', '=', 'template_type.id_type')
@@ -10,13 +10,13 @@
 
 
 <?php                       
-  $loaiTempcon = DB::table('template_type')->select('id_type', 'name')
+  $loaiTempcon = DB::table('template_type')->select('id_type', 'name_type')
   ->where('id_type','=',$idType ?? '')
   ->get();
 ?>
 <div class="container">
   @foreach ($loaiTempcon as $lt)
-      <a href="">{{$lt->name}}</a>
+      <a href="">{{$lt->name_type}}</a>
   </li>
   @endforeach
     <!-- tab content -->
