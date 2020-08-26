@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="text-center  btn-buttons btn-outline-dark-gray mr-3 mb-3">
-                    <h3 class="mt-4 font-18 font-weight-bold"> TEMPLATE : {{$Ten_typetemp}} </h3>
+                    <h3 class="mt-4 font-18 font-weight-bold"> TEMPLATE : {{$title}} </h3>
                 </div>
             </div>
         </div>

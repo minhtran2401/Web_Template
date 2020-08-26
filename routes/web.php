@@ -36,6 +36,9 @@ Route::get('temp/{id}', 'TempController@temp');
 
 
 //-----controller------//
+// trang all temp:
+Route::get('allcategories', 'AlltempController@tempall');
+
 // trang temp theo loại:
 Route::get('categories/{id_temp}', 'TemptheoloaiController@temptheoloai');
 

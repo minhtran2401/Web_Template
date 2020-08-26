@@ -34,7 +34,7 @@
                 </li>
 
                 <li class="has-submenu">
-                    <a href="categories">Template </a>
+                <a href="{{action("AlltempController@tempall")}}">Template </a>
                     <span class="menu-arrow"></span>
                     <ul class="submenu megamenu">
                         <li>
