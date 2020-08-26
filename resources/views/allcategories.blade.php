@@ -35,8 +35,10 @@
                     </div>
                 </div>
                 @endforeach
-
+                
             </div>
+            {{-- paginate --}}
+            <?php echo $kq->links(); ?>
         </div>
     </div>
 </section>
