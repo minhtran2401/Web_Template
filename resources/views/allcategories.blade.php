@@ -1,8 +1,5 @@
 @section("header")
-@section('pagetitle', 'LOGO | TẤT CẢ TEMPLATE')
-
     @include("header")
-    
     @include("menu")   
     @include("breadrum")
 
@@ -26,7 +23,7 @@
                 @foreach ($kq as $r)
                 <div class="col-lg-4 col-md-6 part">
                     <div class="portfolio-box">
-                        <a class="mfp-image" href="assets/images/work/no-img.jpg" title="Business Post">
+                        <a class="mfp-image" href="assets/images/work/work-1.jpg" title="Business Post">
                             <img src="{{$r->image}}" class="img-fluid" alt="member-image">
                         </a>
                         <div class="gallary-title text-center">
@@ -66,6 +63,5 @@
     </div>
 </section>
 <!-- PARTNER END -->
-
 @section("footer")
 @include("footer")
