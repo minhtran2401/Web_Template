@@ -44,7 +44,19 @@ Route::get('categories/{id_temp}', 'TemptheoloaiController@temptheoloai');
 
 
 
+
+
 Auth::routes();
 
 Route::get('/admin', 'AdminController@index')->name('dashboard');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::group(['middleware' => ['auth','Quantri']], function () {
+    Route::resource('theloai', 'TheloaiController');
+    Route::resource('loaitin', 'LoaitinController');
+    Route::resource('tintuc', 'TintucController');
+    Route::resource('ykien', 'YkienController');
+});
+Route::get('/admin', function(){
+    return view('admin/dashboard');
+});
+
