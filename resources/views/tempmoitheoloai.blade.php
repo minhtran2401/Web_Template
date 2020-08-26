@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\DB;
 
 $showtemp =DB::table('template')
         ->join('template_type','template.id_type', '=', 'template_type.id_type')
-        ->orderby('template.Ngay', 'asc')
+        ->orderby('template.Ngay', 'desc')
         ->where ('template.AnHien', '=', '1')
         ->limit(8) ->get();
 
@@ -43,8 +43,8 @@ $showtemp =DB::table('template')
 
                 <div class="col-lg-3 col-md-6 part" >
                     <div class="portfolio-box">
-                    <a class="mfp-image" href="assets/images/work/work-1.jpg" title="{{$show->name}}">
-                            <img src="assets/images/work/work-1.jpg" class="img-fluid" alt="member-image">
+                    <a class="mfp-image" href="assets/images/work/no-img.jpg" title="{{$show->name}}">
+                            <img src="assets/images/work/no-img.jpg" class="img-fluid" alt="member-image">
                         </a>
                         <div class="gallary-title text-center">
                         <h6><a href="work-single.html">{{$show->name}}</a></h6>
@@ -62,7 +62,7 @@ $showtemp =DB::table('template')
         <div class="row">
             <div class="col-md-12">
                 <div class="text-center mt-30">
-                    <a href="categories" class="btn btn-custom">See More <i class="fas fa-angle-right"></i></a>
+                    <a href="allcategories" class="btn btn-custom">See More <i class="fas fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
