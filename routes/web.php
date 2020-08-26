@@ -43,3 +43,8 @@ Route::get('allcategories', 'AlltempController@tempall');
 Route::get('categories/{id_temp}', 'TemptheoloaiController@temptheoloai');
 
 
+
+Auth::routes();
+
+Route::get('/admin', 'AdminController@index')->name('dashboard');
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
