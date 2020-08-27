@@ -42,7 +42,7 @@ Route::get('allcategories', 'AlltempController@tempall');
 // trang temp theo loại:
 Route::get('categories/{id_temp}', 'TemptheoloaiController@temptheoloai');
 
-
+Route::post('/contact', 'GuimailController@guimaillienhe');
 
 
 

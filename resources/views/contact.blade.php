@@ -30,7 +30,8 @@
                     <div class="col-md-6">
                         <div class="custom-form mt-30">
                             <div id="message"></div>
-                            <form method="post" action="https://alita.netlify.com/layouts/php/contact.php" name="contact-form" id="contact-form">
+                            <form method="post" action="contact" name="contact-form" id="contact-form">
+                                {{csrf_field()}}
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group app-label">
@@ -44,18 +45,18 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group app-label">
-                                            <input name="subject" id="subject" class="form-control" placeholder="Viết Tiêu Đề :">
+                                            <input name="title" id="title" class="form-control" placeholder="Viết Tiêu Đề :">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group app-label">
-                                            <textarea name="comments" id="comments" rows="3" class="form-control" placeholder="Nhập Mô Tả :"></textarea>
+                                            <textarea name="message" id="message" rows="3" class="form-control" placeholder="Nhập Mô Tả :"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <input href="#myModal" type="submit" id="submit" name="send" class="submitBnt btn btn-custom w-100" value="Gửi">
+                                        <input  type="submit" id="submit" name="send" class="submitBnt btn btn-custom w-100" value="Gửi">
                                         <div id="simple-msg"></div>
                                     </div>
                                 </div>

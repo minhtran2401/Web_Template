@@ -10,4 +10,12 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-}
+    function lienhe(){
+        $d = array ('title' => 'Liên Hệ');
+        return view ('contact', $d);
+    }
+    
+ 
+    
+    }
+
