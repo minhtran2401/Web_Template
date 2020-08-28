@@ -62,6 +62,13 @@ Route::group(['middleware' => ['auth','Quantri']], function () {
    
 });
 
+<<<<<<< HEAD
     
 
 
+=======
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+>>>>>>> 4c554898282518b7a468351d877ea9231b533a0c
