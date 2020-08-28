@@ -47,16 +47,18 @@ Route::post('/contact', 'GuimailController@guimaillienhe');
 
 
 Auth::routes();
-
+Route::get('/dashboard', 'AdminController@dashboard')->name('admin');
 Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/email', 'AdminController@email')->name('admin');
+Route::get('/chatapp', 'AdminController@chatapp')->name('admin');
+Route::get('/calendar', 'AdminController@lich')->name('admin');
+
+
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+
 // Route::group(['middleware' => ['auth','Quantri']], function () {
 //     Route::resource('theloai', 'TheloaiController');
-//     Route::resource('loaitin', 'LoaitinController');
-//     Route::resource('tintuc', 'TintucController');
-//     Route::resource('ykien', 'YkienController');
-// });
-// Route::get('/admin', function(){
-//     return view('admin/dashboard');
-// });
+    
+
 

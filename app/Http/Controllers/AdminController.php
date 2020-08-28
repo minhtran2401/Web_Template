@@ -25,4 +25,25 @@ class AdminController extends Controller
     {
         return view('admin/dashboard');
     }
+
+    function email()
+    {
+        return view('admin/app/email');
+    }
+
+    function dashboard()
+    {
+        return view('admin/dashboard');
+    }
+
+    function chatapp()
+    {
+        return view ('admin/app/chatapp');
+    }
+
+    function lich()
+    {
+        return view ('admin/app/calendar');
+    }
+    
 }
