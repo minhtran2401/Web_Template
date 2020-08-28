@@ -57,8 +57,11 @@ Route::get('/calendar', 'AdminController@lich')->name('admin');
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
-// Route::group(['middleware' => ['auth','Quantri']], function () {
-//     Route::resource('theloai', 'TheloaiController');
+Route::group(['middleware' => ['auth','Quantri']], function () {
+    Route::resource('template', 'TemplateAdminController');
+   
+});
+
     
 
 
