@@ -33,7 +33,7 @@
 
           <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Template</span></a>
             <ul class="ml-menu">
-                <li><a href="">Template</a></li>
+                <li><a href="{{route('template.index')}}">Template</a></li>
                 <li><a href="">Thêm Template Mới</a></li>
               
             </ul>

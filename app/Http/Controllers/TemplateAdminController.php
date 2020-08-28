@@ -13,7 +13,8 @@ class TemplateAdminController extends Controller
      */
     public function index()
     {
-
+        $ds=templateBE::all();
+        return view('admin.template.index', compact('ds'));
     }
 
     /**
@@ -35,8 +36,18 @@ class TemplateAdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $tl = new theloai([
+            'TenTL' => $request->get('TenTL'),
+            'ThuTu' => $request->get('ThuTu'),
+            'AnHien' => $request->get('AnHien'),
+            'HienMenu' => $request->get('HienMenu'),
+            'lang' => $request->get('lang'),
+        ]);
+        $tl->save();
+        return redirect('/theloai')->with('success','Thể loại đã được lưu');
     }
+    
+    
 
     /**
      * Display the specified resource.
@@ -80,6 +91,8 @@ class TemplateAdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $lt = temp::find($id);
+        $lt->delete();
+        return redirect('/template')->with('success', 'Đã xóa xong');
     }
 }
