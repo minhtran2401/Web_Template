@@ -11,7 +11,7 @@
                 <div class="col-lg-7 col-md-6 col-sm-12">
                     <h2>  DANH SÁCH TEMPLATE  </h2>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> Aero</a></li>
+                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> MiNhaTi</a></li>
                         <li class="breadcrumb-item active">DANH SÁCH TEMPLATE</li>
                     </ul>
                     <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
@@ -40,7 +40,7 @@
             
               <tr>
                 <td class="cell-small text-center" >
-                    <div>idTin: {{ $row->idTin}}</div>
+                    <div>idTemp: <span class="text-danger" > {{ $row->id_temp}}</span></div>
                     <div>{{$row->Ngay->format('d/m/Y')}}</div>
                     <div>Lượt Xem: {{$row->luotxem}}</div>
                     <div>Lượt Tải: {{$row->luottai}}</div>
@@ -48,15 +48,16 @@
                    
                 </td>
                 <td class="hidden-xs hidden-sm text-center" >
-                    <div>{{$row->name}} <div> 
-                    <div>{{$row->path}} </div> 
+                    <div> <span  > {{$row->name}} </span> <div> 
+                    <div> <span class="text-primary" > {{$row->path}} </span> </div> 
                     <div>{{$row->size}} </div> 
 
 
                    
                 </td>
                 <td class="hidden-xs hidden-sm text-center">
-                    <div class="tt" > <h5> @php
+                    <div class="tt" > <h5>
+                  @php
                       $id_type =$row->id_type;
                       $tl = App\templateBE::find($id_type);
                       echo $tl->name_type;
@@ -65,7 +66,7 @@
                   <div class="lt" >
                     
                         <div>{{$row->tags}} </div> 
-                        <div class="anhien">{{ ($row->AnHien==1)? "Đang hiện":" Đang ẩn " }}</div> 
+                        <div class="anhien">{{ ($row->Anhien==1)? "Đang hiện":" Đang ẩn " }}</div> 
 
                     
                   </div>

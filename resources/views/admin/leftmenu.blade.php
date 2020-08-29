@@ -1,20 +1,20 @@
 <aside id="leftsidebar" class="sidebar">
   <div class="navbar-brand">
       <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
-      <a href="index.html"><img src="assets/images/logo.svg" width="25" alt="Aero"><span class="m-l-10">Aero</span></a>
+      <a href="index.html"><img src="{{asset('assets')}}/images/logo.svg" width="25" alt="Aero"><span class="m-l-10">MiNhaTi</span></a>
   </div>
   <div class="menu">
       <ul class="list">
           <li>
               <div class="user-info">
-                  <a class="image" href=""><img src="assets/images/{{ Auth::user()->avatar }}" alt="{{ Auth::user()->name }}"></a>
+                  <a class="image" href=""><img src="{{asset('assets')}}/images/{{ Auth::user()->avatar }}" alt="{{ Auth::user()->name }}"></a>
                   <div class="detail">
                       <h6>{{ Auth::user()->name }}</h6>
                   <small>{{ Auth::user()->idgroup==1? "Admin " : "Hacker" }}</small>                        
                   </div>
               </div>
           </li>
-          <li class="active open"><a href="admin"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+        <li class="active open"><a href="{{asset('admin')}}"><i class="zmdi zmdi-home"></i><span>Trang chủ</span></a></li>
           <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>Ứng dụng xịn xò</span></a>
               <ul class="ml-menu">
                   <li><a href="email">Email</a></li>
@@ -25,16 +25,16 @@
           </li>
           <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Loại Template</span></a>
               <ul class="ml-menu">
-                  <li><a href="">Loại Template</a></li>
-                  <li><a href="">Thêm Loại Mới</a></li>
+                  <li><a href="{{route('temp_typeBE.index')}}">Loại Template</a></li>
+                  <li><a href="{{route('temp_typeBE.create')}}">Thêm Loại Mới</a></li>
                 
               </ul>
           </li>
 
           <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Template</span></a>
             <ul class="ml-menu">
-                <li><a href="{{route('template.index')}}">Template</a></li>
-                <li><a href="">Thêm Template Mới</a></li>
+                <li><a href="{{route('templateBE.index')}}">Template</a></li>
+                <li><a href="{{route('templateBE.create')}}">Thêm Template Mới</a></li>
               
             </ul>
         </li>

@@ -1,5 +1,5 @@
 @extends('admin.layoutadmin')
-@section('pagetitle', "THÊM TEMPLATE MỚI")
+@section('pagetitle', "THÊM LOẠI TEMPLATE MỚI")
 @section('main')
     <section class="content">
     <div class="">
@@ -9,7 +9,7 @@
                     <h2>LOẠI TEMPLATE</h2>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="../admin"><i class="zmdi zmdi-home"></i> MiNhaTi</a></li>
-                        <li class="breadcrumb-item active">THÊM TEMPLATE MỚI</li>
+                        <li class="breadcrumb-item active">THÊM LOẠI MỚI</li>
                     </ul>
                     <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
                 </div>

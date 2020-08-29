@@ -156,7 +156,7 @@
                                 </li>
                             </ul>
                             <div class="img">
-                                <img src="assets/images/lg/avatar1.jpg" class="rounded-circle" alt="profile-image">
+                                <img src="{{asset('assets')}}/images/lg/avatar1.jpg" class="rounded-circle" alt="profile-image">
                             </div>
                             <div class="user">
                                 <h5 class="mt-3 mb-1">Eliana Smith</h5>
@@ -200,7 +200,7 @@
                             <div class="chat-widget">
                                 <ul class="list-unstyled">
                                     <li class="left">
-                                        <img src="assets/images/xs/avatar3.jpg" class="rounded-circle" alt="">
+                                        <img src="{{asset('assets')}}/images/xs/avatar3.jpg" class="rounded-circle" alt="">
                                         <ul class="list-unstyled chat_info">
                                             <li><small>Frank 11:00AM</small></li>
                                             <li><span class="message bg-blue">Hello, Michael</span></li>
@@ -220,14 +220,14 @@
                                         </ul>
                                     </li>
                                     <li class="left">
-                                        <img src="assets/images/xs/avatar2.jpg" class="rounded-circle" alt="">
+                                        <img src="{{asset('assets')}}/images/xs/avatar2.jpg" class="rounded-circle" alt="">
                                         <ul class="list-unstyled chat_info">
                                             <li><small>Gary 11:13AM</small></li>
                                             <li><span class="message bg-indigo">Hello, Michael and Frank</span></li>
                                         </ul>
                                     </li>
                                     <li class="left">
-                                        <img src="assets/images/xs/avatar5.jpg" class="rounded-circle" alt="">
+                                        <img src="{{asset('assets')}}/images/xs/avatar5.jpg" class="rounded-circle" alt="">
                                         <ul class="list-unstyled chat_info">
                                             <li><small>Hossein 11:14AM</small></li>
                                             <li><span class="message bg-amber">Hello, team</span></li>
