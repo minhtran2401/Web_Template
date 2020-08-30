@@ -41,19 +41,49 @@
     <link href="assets/css/menu.css" rel="stylesheet">
     <link href="assets/css/default.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/temp.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
 </head>
 
 <body>
-        <!-- Loader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
+<!------------------->
+@if(session()->get('message'))
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Thư Cảnh Cáo (*_*)</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Chúng tôi nhận thấy bạn đang cố truy cập vào hệ thống quản trị wesite của chúng tôi mà chưa được sự cho phép của MiNhaTi!</p>
+                <p>Nếu còn tiếp tục, bạn sẽ nhận hình phạt từ ban quản trị, mong bạn hợp tác.</p>
+                <form>
+                    <a href="{{action("homeController@blankpage")}}"><button type="button" class="btn btn-danger">Tao Thích</button></a>
+                    <button data-dismiss="modal" aria-hidden="true" type="button" class="btn btn-primary float-right">Đã Hiểu</button>
+                </form>
             </div>
         </div>
+    </div>
+</div>
+@endif
+<!------------------->
+<!-- Loader -->
+<div id="preloader">
+    <div id="status">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
 <!-- Navigation Bar-->
 <div class="tagline hidden-md">
     <div class="container">

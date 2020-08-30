@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'homeController@index');
+Route::get('/blankpage', 'homeController@blankpage');
 
 Route::get('/contact', function () {
     return view('contact');
@@ -53,9 +54,7 @@ Route::get('/email', 'AdminController@email')->name('admin');
 Route::get('/chatapp', 'AdminController@chatapp')->name('admin');
 Route::get('/calendar', 'AdminController@lich')->name('admin');
 
-
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::group(['middleware' => ['auth','Quantri']], function () {
     Route::resource('/templateBE', 'TemplateAdminController');

@@ -14,8 +14,5 @@ class Controller extends BaseController
         $d = array ('title' => 'Liên Hệ');
         return view ('contact', $d);
     }
-    
- 
-    
-    }
+}
 
