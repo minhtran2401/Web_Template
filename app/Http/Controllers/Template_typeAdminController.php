@@ -62,7 +62,8 @@ class Template_typeAdminController extends Controller
      */
     public function edit($id)
     {
-        //
+        $row =temp_typeBE::find($id);
+        return view('admin.templatetype.edit',compact('row'));
     }
 
     /**
@@ -85,6 +86,8 @@ class Template_typeAdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $lt = temp_typeBE::find($id);
+        $lt->delete();
+        return redirect()->route('temp_typeBE.index');
     }
 }

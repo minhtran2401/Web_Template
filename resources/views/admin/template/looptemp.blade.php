@@ -11,7 +11,7 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Basic DataTables</h4>
+                    <h4>DANH SÁCH TEMPLATE</h4>
                   </div>
                   <div class="card-body">
                     <div class="table-responsive">
@@ -33,7 +33,9 @@
                             @foreach ($ds as $row)
                           <tr>
                             <td>
-                                {{ $row->id_temp}}
+                              <div> {{ $row->id_temp}} </div> 
+                               <div> {{ $row->Anhien==1? "Đang hiện " : "Đang ẩn"}}</div> 
+
                             </td>
                             <td>
                             <div>{{$row->name}}</div>
@@ -57,11 +59,11 @@
                                 <div>{{$row->Ngay->format('d-m-Y')}}</div>
                             </td>
                             <td>
-                                <div> {{$row->luottai}} </div>
-                                <div> {{$row->luotxem}} </div>
+                                <div> {{$row->luottai}} Lượt </div>
+                                <div> {{$row->luotxem}} Lượt</div>
                             </td>
                             <td>
-                                <img alt="image" src=" {{asset('cssadmin')}}/assets/upload/product/{{$row->image}}" width="35">
+                                <img alt="image" src=" {{asset('cssadmin')}}/assets/upload/product/{{$row->image}}" width="50">
                             </td>
                             <td><a href="#" class="btn btn-primary"> <i class="fa fa-eye" aria-hidden="true"></i> Sửa</a>
                                 <a href="#" class="btn btn-danger"> <i class="fa fa-trash" aria-hidden="true"></i> Xóa</a>
@@ -75,39 +77,8 @@
                 </div>
               </div>
             </div>
-@section('jsc')
-<script>
-    $(function(){
-      $('#table').dataTable({
-        responsive: true,     
-        pageLength:3,       
-        language: {
-            "decimal":        "",
-    "emptyTable":     "Không có kết quả tìm kiếm",
-    "info":           "Hiển thị  _END_ trong _TOTAL_ sản phẩm",
-    "infoEmpty":      "Hiển thị 0 to 0 of 0 sản phẩm",
-    "infoFiltered":   "( đã lọc  trong số _MAX_  sản phẩm)",
-    "infoPostFix":    "",
-    "thousands":      ",",
-    "lengthMenu":     "Hiển thị _MENU_ sản phẩm",
-    
-    "loadingRecords": "Đang tải...",
-    "processing":     " Đang xử lí ...",
-    "search":         "Tìm kiếm:",
-    "zeroRecords":    "Không tìm thấy kết quả",
-    "paginate": {
-        "first":      "Trước",
-        "last":       "Sau",
-        "next":       "Sau",
-        "previous":   "Trước"
-    },
-    "aria": {
-        "sortAscending":  ": activate to sort column ascending",
-        "sortDescending": ": activate to sort column descending"
-    }
-        }
-      });
-    });
-</script>
-@endsection
+          </section>
+        </div>
+        
+
 @endsection
