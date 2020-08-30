@@ -19,7 +19,7 @@ class templateBE extends Model {
         'description',
         'id_type',
         'tags',
-        'Anhien',       
+        'Anhien',
     ];
 }
 

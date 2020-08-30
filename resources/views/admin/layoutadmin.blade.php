@@ -57,49 +57,6 @@
                 </div>
               </div>
               <div class="dropdown-list-content dropdown-list-message">
-                {{-- <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
-											text-white"> <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-1.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">John
-                      Deo</span>
-                    <span class="time messege-text">Please check your mail !!</span>
-                    <span class="time">2 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-2.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
-                      Smith</span> <span class="time messege-text">Request for leave
-                      application</span>
-                    <span class="time">5 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-5.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jacob
-                      Ryan</span> <span class="time messege-text">Your payment invoice is
-                      generated.</span> <span class="time">12 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-4.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Lina
-                      Smith</span> <span class="time messege-text">hii John, I have upload
-                      doc
-                      related to task.</span> <span class="time">30
-                      Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-3.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jalpa
-                      Joshi</span> <span class="time messege-text">Please do as specify.
-                      Let me
-                      know if you have any query.</span> <span class="time">1
-                      Days Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-2.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
-                      Smith</span> <span class="time messege-text">Client Requirements</span>
-                    <span class="time">2 Days Ago</span>
-                  </span>
-                </a> --}}
               </div>
               <div class="dropdown-footer text-center">
                 <a href="#">View All <i class="fas fa-chevron-right"></i></a>
@@ -286,27 +243,6 @@
       </footer>
     </div>
   </div>
-  <!--calendar-->
-  {{-- <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/bundles/fullcalendar/fullcalendar.min.js"></script>
-  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/page/calendar.js"></script>
-
-  <!--datatable-->
-  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/bundles/datatables/datatables.min.js"></script>
-  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
-  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/bundles/jquery-ui/jquery-ui.min.js"></script>
-  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/page/datatables.js"></script>
-
-
-  <!-- General JS Scripts -->
-  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/app.min.js"></script>
-  <!-- JS Libraies -->
-  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/bundles/apexcharts/apexcharts.min.js"></script>
-  <!-- Page Specific JS File -->
-  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/page/index.js"></script>
-  <!-- Template JS File -->
-  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/scripts.js"></script>
-  <!-- Custom JS File -->
-  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/custom.js"></script> --}}
 
   <script src="{{asset('cssadmin')}}/assets/js/app.min.js"></script>
   <!-- JS Libraies -->

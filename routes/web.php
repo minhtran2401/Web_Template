@@ -60,9 +60,4 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::group(['middleware' => ['auth','Quantri']], function () {
     Route::resource('/templateBE', 'TemplateAdminController');
     Route::resource('/temp_typeBE', 'Template_typeAdminController');
-
-   
 });
-
-
-

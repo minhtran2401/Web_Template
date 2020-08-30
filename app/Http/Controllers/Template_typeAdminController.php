@@ -40,7 +40,7 @@ class Template_typeAdminController extends Controller
             'Anhien' => $request->get('Anhien'),
         ]);
         $lt->save();
-        return redirect ('/temp_typeBE')->with('success','Đã thêm loại mới');
+        return redirect ('/temp_typeBE')->with('success','Đã thêm loại template mới');
     }
 
     /**
@@ -87,7 +87,11 @@ class Template_typeAdminController extends Controller
     public function destroy($id)
     {
         $lt = temp_typeBE::find($id);
-        $lt->delete();
-        return redirect()->route('temp_typeBE.index');
+        if ($lt->kttemp()->get()->toArray()==null) {
+            $lt->delete();
+            return redirect('/temp_typeBE')->with('successx', 'Đã xóa xong loại temp vừa chọn');
+        }else{
+            return redirect('/temp_typeBE')->with('status', 'Không thể xóa loại temp vừa chọn do chứa temp.');
+        }
     }
 }
