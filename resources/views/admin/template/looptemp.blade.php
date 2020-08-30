@@ -4,107 +4,81 @@
 
 @section('pagetitle', 'DANH SÁCH TEMPLATE ')
 @section('main')
-<section class="content">
-    <div class="">
-        <div class="block-header">
+<div class="main-content">
+        <section class="section">
+          <div class="section-body">
             <div class="row">
-                <div class="col-lg-7 col-md-6 col-sm-12">
-                    <h2>  DANH SÁCH TEMPLATE  </h2>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> MiNhaTi</a></li>
-                        <li class="breadcrumb-item active">DANH SÁCH TEMPLATE</li>
-                    </ul>
-                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
-                </div>
-                <div class="col-lg-5 col-md-6 col-sm-12">                
-                    <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i class="zmdi zmdi-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <table id="db1" class="table table-bordered table-striped table-hover js-basic-example dataTable">
-            <thead>
-              <tr>
-                <th class="cell-small text-center" >idTemp <br> Ngày Upload </th>
-                <th class="hidden-xs hidden-sm text-center">Tên / Đường Dẫn <br> Kích Thước </th>
-                <th class="hidden-xs hidden-sm text-center">Loại Temp <br> Tags / Trạng Thái</th>
-                <th class="hidden-xs hidden-sm text-center">Mô Tả </th>
-                <th class="hidden-xs hidden-sm text-center">Ảnh </th>
-                <th class="cell-small text-center"  >Chỉnh/Xóa </th>
-               
-              </tr>
-            </thead>
-                
-            <tbody>
-            @foreach ($ds as $row)
-            
-              <tr>
-                <td class="cell-small text-center" >
-                    <div>idTemp: <span class="text-danger" > {{ $row->id_temp}}</span></div>
-                    <div>{{$row->Ngay->format('d/m/Y')}}</div>
-                    <div>Lượt Xem: {{$row->luotxem}}</div>
-                    <div>Lượt Tải: {{$row->luottai}}</div>
-
-                   
-                </td>
-                <td class="hidden-xs hidden-sm text-center" >
-                    <div> <span  > {{$row->name}} </span> <div> 
-                    <div> <span class="text-primary" > {{$row->path}} </span> </div> 
-                    <div>{{$row->size}} </div> 
-
-
-                   
-                </td>
-                <td class="hidden-xs hidden-sm text-center">
-                    <div class="tt" > <h5>
-                  @php
-                      $id_type =$row->id_type;
-                      $tl = App\templateBE::find($id_type);
-                      echo $tl->name_type;
-                  @endphp</h5></div>
-            
-                  <div class="lt" >
-                    
-                        <div>{{$row->tags}} </div> 
-                        <div class="anhien">{{ ($row->Anhien==1)? "Đang hiện":" Đang ẩn " }}</div> 
-
-                    
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Basic DataTables</h4>
                   </div>
-                </td>
-                <td class="hidden-xs hidden-sm text-center">
-                  <div class="anhien" style="font-size: 0.5rem"> {{ ($row->description)}}</div> 
-               
-                </td>
-                <td class="hidden-xs hidden-sm text-center">
-                    
-                        <img class="img-thumbnail" width="100px" height="100px" src="assets/images/work/{{ ($row->image)}} " alt="">
-                    
-            
-                 
-                  </td>
-                <td class="cell-small text-center" >
-                     
-                    <form method="post" action=""> 
-                        {{ csrf_field()}} {!! method_field('delete') !!}
-                        <a href="" title="Sửa" class="btn btn-success"> <i class="zmdi zmdi-hc-fw"></i> </a>
-                        <button onclick="return confirm('Xóa hả?'); " title="Xóa" class="btn btn-danger" type="submit"><i class="zmdi zmdi-hc-fw"></i></button>
-                    </form>
-                </td>
-            
-                
-             
-              </tr>
-              @endforeach
-            </tbody>
-            </table>
-            
-        </div>
-    </div>
-</section>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped" id="table-1">
+                        <thead>
+                          <tr>
+                            <th class="text-center">
+                              #
+                            </th>
+                            <th>Tên /<br> Loại </th>
+                            <th>Đường dẫn /<br> Kích thước </th>
+                            <th>Thẻ Tag / <br> Ngày Đăng</th>
+                            <th>Lượt Tải / <br> Lượt Xem</th>
+                            <th>Hình Ảnh</th>
+                            <th>Quản Lí</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($ds as $row)
+                          <tr>
+                            <td>
+                                {{ $row->id_temp}}
+                            </td>
+                            <td>
+                            <div>{{$row->name}}</div>
+                            <div>
+                                @php
+                                $id_type =$row->id_type;
+                                $tl = App\temp_typeBE::find($id_type);
+                                echo $tl->name_type;
+                            @endphp</h5></div>
+                      
+                            </div>
+                        </td>
+                            <td class="align-middle">
+                              <div>
+                                <div>{{$row->path}}</div>
+                                    <div> {{$row->size}} </div>
+                              </div>
+                            </td>
+                            <td>
+                                <div> {{$row->tags}} </div>
+                                <div>{{$row->Ngay->format('d-m-Y')}}</div>
+                            </td>
+                            <td>
+                                <div> {{$row->luottai}} </div>
+                                <div> {{$row->luotxem}} </div>
+                            </td>
+                            <td>
+                                <img alt="image" src=" {{asset('cssadmin')}}/assets/upload/product/{{$row->image}}" width="35">
+                            </td>
+                            <td><a href="#" class="btn btn-primary"> <i class="fa fa-eye" aria-hidden="true"></i> Sửa</a>
+                                <a href="#" class="btn btn-danger"> <i class="fa fa-trash" aria-hidden="true"></i> Xóa</a>
+                            </td>
+                          </tr>
+                          @endforeach
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 @section('jsc')
 <script>
     $(function(){
-      $('#db1').dataTable({
+      $('#table').dataTable({
         responsive: true,     
         pageLength:3,       
         language: {

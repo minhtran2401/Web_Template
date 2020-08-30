@@ -1,359 +1,625 @@
 @extends('admin.layoutadmin')
 @section('pagetitle', 'QUẢN LÍ ADMIN ')
 @section('main')
-<section class="content">
-    <div class="">
-        <div class="block-header">
-            <div class="row">
-                <div class="col-lg-7 col-md-6 col-sm-12">
-                    <h2>Dashboard</h2>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> Aero</a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
-                    </ul>
-                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+<div class="main-content">
+    <section class="section">
+      <div class="row ">
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-statistic-4">
+              <div class="align-items-center justify-content-between">
+                <div class="row ">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                    <div class="card-content">
+                      <h5 class="font-15">New Booking</h5>
+                      <h2 class="mb-3 font-18">258</h2>
+                      <p class="mb-0"><span class="col-green">10%</span> Increase</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                    <div class="banner-img">
+                      <img src="{{asset('cssadmin')}}/assets/img/banner/1.png" alt="">
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-5 col-md-6 col-sm-12">                
-                    <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i class="zmdi zmdi-arrow-right"></i></button>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="container-fluid">
-            <div class="row clearfix">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card widget_2 big_icon traffic">
-                        <div class="body">
-                            <h6>Traffic</h6>
-                            <h2>20 <small class="info">of 1Tb</small></h2>
-                            <small>2% higher than last month</small>
-                            <div class="progress">
-                                <div class="progress-bar l-amber" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
-                            </div>
-                        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-statistic-4">
+              <div class="align-items-center justify-content-between">
+                <div class="row ">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                    <div class="card-content">
+                      <h5 class="font-15"> Customers</h5>
+                      <h2 class="mb-3 font-18">1,287</h2>
+                      <p class="mb-0"><span class="col-orange">09%</span> Decrease</p>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card widget_2 big_icon sales">
-                        <div class="body">
-                            <h6>Sales</h6>
-                            <h2>12% <small class="info">of 100</small></h2>
-                            <small>6% higher than last month</small>
-                            <div class="progress">
-                                <div class="progress-bar l-blue" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%;"></div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                    <div class="banner-img">
+                      <img src="{{asset('cssadmin')}}/assets/img/banner/2.png" alt="">
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card widget_2 big_icon email">
-                        <div class="body">
-                            <h6>Email</h6>
-                            <h2>39 <small class="info">of 100</small></h2>
-                            <small>Total Registered email</small>
-                            <div class="progress">
-                                <div class="progress-bar l-purple" role="progressbar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100" style="width: 39%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card widget_2 big_icon domains">
-                        <div class="body">
-                            <h6>Domains</h6>
-                            <h2>8 <small class="info">of 10</small></h2>
-                            <small>Total Registered Domain</small>
-                            <div class="progress">
-                                <div class="progress-bar l-green" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width: 89%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="row clearfix">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2><strong><i class="zmdi zmdi-chart"></i> Sales</strong> Report</h2>
-                            <ul class="header-dropdown">
-                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                    <ul class="dropdown-menu dropdown-menu-right slideUp">
-                                        <li><a href="javascript:void(0);">Edit</a></li>
-                                        <li><a href="javascript:void(0);">Delete</a></li>
-                                        <li><a href="javascript:void(0);">Report</a></li>
-                                    </ul>
-                                </li>
-                                <li class="remove">
-                                    <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body mb-2">
-                            <div class="row clearfix">
-                                <div class="col-lg-3 col-md-6 col-sm-6">
-                                    <div class="state_w1 mb-1 mt-1">
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h5>2,365</h5>
-                                                <span><i class="zmdi zmdi-balance"></i> Revenue</span>
-                                            </div>
-                                            <div class="sparkline" data-type="bar" data-width="97%" data-height="55px" data-bar-Width="3" data-bar-Spacing="5" data-bar-Color="#868e96">5,2,3,7,6,4,8,1</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6">
-                                    <div class="state_w1 mb-1 mt-1">
-                                        <div class="d-flex justify-content-between">
-                                            <div>                                
-                                                <h5>365</h5>
-                                                <span><i class="zmdi zmdi-turning-sign"></i> Returns</span>
-                                            </div>
-                                            <div class="sparkline" data-type="bar" data-width="97%" data-height="55px" data-bar-Width="3" data-bar-Spacing="5" data-bar-Color="#2bcbba">8,2,6,5,1,4,4,3</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6">
-                                    <div class="state_w1 mb-1 mt-1">
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h5>65</h5>
-                                                <span><i class="zmdi zmdi-alert-circle-o"></i> Queries</span>
-                                            </div>
-                                            <div class="sparkline" data-type="bar" data-width="97%" data-height="55px" data-bar-Width="3" data-bar-Spacing="5" data-bar-Color="#82c885">4,4,3,9,2,1,5,7</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6">
-                                    <div class="state_w1 mb-1 mt-1">
-                                        <div class="d-flex justify-content-between">
-                                            <div>                            
-                                                <h5>2,055</h5>
-                                                <span><i class="zmdi zmdi-print"></i> Invoices</span>
-                                            </div>
-                                            <div class="sparkline" data-type="bar" data-width="97%" data-height="55px" data-bar-Width="3" data-bar-Spacing="5" data-bar-Color="#45aaf2">7,5,3,8,4,6,2,9</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="body">
-                            <div id="chart-area-spline-sracked" class="c3_chart d_sales"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card mcard_4">
-                        <div class="body">
-                            <ul class="header-dropdown list-unstyled">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-menu"></i> </a>
-                                    <ul class="dropdown-menu slideUp">
-                                        <li><a href="javascript:void(0);">Edit</a></li>
-                                        <li><a href="javascript:void(0);">Delete</a></li>
-                                        <li><a href="javascript:void(0);">Report</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div class="img">
-                                <img src="{{asset('assets')}}/images/lg/avatar1.jpg" class="rounded-circle" alt="profile-image">
-                            </div>
-                            <div class="user">
-                                <h5 class="mt-3 mb-1">Eliana Smith</h5>
-                                <small class="text-muted">UI/UX Desiger</small>
-                            </div>
-                            <ul class="list-unstyled social-links">
-                                <li><a href="javascript:void(0);"><i class="zmdi zmdi-dribbble"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="zmdi zmdi-behance"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="zmdi zmdi-pinterest"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>                
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card w_data_1">
-                       <div class="body">
-                            <div class="w_icon pink"><i class="zmdi zmdi-bug"></i></div>
-                            <h4 class="mt-3 mb-0">12.1k</h4>
-                            <span class="text-muted">Bugs Fixed</span>
-                            <div class="w_description text-success">
-                                <i class="zmdi zmdi-trending-up"></i>
-                                <span>15.5%</span>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="card w_data_1">
-                        <div class="body">
-                            <div class="w_icon cyan"><i class="zmdi zmdi-ticket-star"></i></div>
-                            <h4 class="mt-3 mb-1">01.8k</h4>
-                            <span class="text-muted">Submitted Tickers</span>
-                            <div class="w_description text-success">
-                                <i class="zmdi zmdi-trending-up"></i>
-                                <span>95.5%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="card">
-                        <div class="body">
-                            <div class="chat-widget">
-                                <ul class="list-unstyled">
-                                    <li class="left">
-                                        <img src="{{asset('assets')}}/images/xs/avatar3.jpg" class="rounded-circle" alt="">
-                                        <ul class="list-unstyled chat_info">
-                                            <li><small>Frank 11:00AM</small></li>
-                                            <li><span class="message bg-blue">Hello, Michael</span></li>
-                                            <li><span class="message bg-blue">How are you!</span></li>
-                                        </ul>
-                                    </li>
-                                    <li class="right">
-                                        <ul class="list-unstyled chat_info">
-                                            <li><small>11:10AM</small></li>
-                                            <li><span class="message">Hello, Frank</span></li>
-                                        </ul>
-                                    </li>
-                                    <li class="right">
-                                        <ul class="list-unstyled chat_info">
-                                            <li><small>11:11AM</small></li>
-                                            <li><span class="message">I'm fine what about you?</span></li>
-                                        </ul>
-                                    </li>
-                                    <li class="left">
-                                        <img src="{{asset('assets')}}/images/xs/avatar2.jpg" class="rounded-circle" alt="">
-                                        <ul class="list-unstyled chat_info">
-                                            <li><small>Gary 11:13AM</small></li>
-                                            <li><span class="message bg-indigo">Hello, Michael and Frank</span></li>
-                                        </ul>
-                                    </li>
-                                    <li class="left">
-                                        <img src="{{asset('assets')}}/images/xs/avatar5.jpg" class="rounded-circle" alt="">
-                                        <ul class="list-unstyled chat_info">
-                                            <li><small>Hossein 11:14AM</small></li>
-                                            <li><span class="message bg-amber">Hello, team</span></li>
-                                            <li><span class="message bg-amber">Please let me know your requirements.</span></li>
-                                            <li><span class="message bg-amber">How would like to connect with us?</span></li>
-                                        </ul>
-                                    </li>
-                                    <li class="right">
-                                        <ul class="list-unstyled chat_info">
-                                            <li><small>11:15AM</small></li>
-                                            <li><span class="message">Hello, Hossein</span></li>
-                                            <li><span class="message">Meeting on conference room at 12:00PM</span></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="input-group mt-3">
-                                <div class="input-group-prepend">                                    
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="javascript:void(0);">Tim Hank</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">Hossein Shams</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">John Smith</a>
-                                    </div>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Enter text here..." aria-label="Text input with dropdown button">
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><i class="zmdi zmdi-mail-send"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-md-12 col-lg-8">
-                    <div class="card">
-                        <div class="header">
-                            <h2><strong>Visitors</strong> Statistics</h2>
-                            <ul class="header-dropdown">
-                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                    <ul class="dropdown-menu dropdown-menu-right slideUp">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else</a></li>
-                                    </ul>
-                                </li>
-                                <li class="remove">
-                                    <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
-                                </li>
-                            </ul>                        
-                        </div>
-                        <div class="body">
-                            <div id="world-map-markers" class="jvector-map"></div>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2><strong>Distribution</strong></h2>
-                            <ul class="header-dropdown">
-                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                    <ul class="dropdown-menu dropdown-menu-right slideUp">
-                                        <li><a href="javascript:void(0);">Edit</a></li>
-                                        <li><a href="javascript:void(0);">Delete</a></li>
-                                        <li><a href="javascript:void(0);">Report</a></li>
-                                    </ul>
-                                </li>
-                                <li class="remove">
-                                    <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body text-center">
-                            <div id="chart-pie" class="c3_chart d_distribution"></div>
-                            <button class="btn btn-primary mt-4 mb-4">View More</button>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row clearfix">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2><strong>Traffic</strong> Source</h2>
-                            <ul class="header-dropdown">
-                                <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more"></i> </a>
-                                    <ul class="dropdown-menu dropdown-menu-right slideUp">
-                                        <li><a href="javascript:void(0);">Edit</a></li>
-                                        <li><a href="javascript:void(0);">Delete</a></li>
-                                        <li><a href="javascript:void(0);">Report</a></li>
-                                    </ul>
-                                </li>
-                                <li class="remove">
-                                    <a role="button" class="boxs-close"><i class="zmdi zmdi-close"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div class="row">
-                                <div class="col-lg-8 col-md-6 col-sm-12">
-                                    <div id="chart-area-step" class="c3_chart d_traffic"></div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <span> More than 30% percent of users come from direct links. Check details page for more information.</span>
-                                    <div class="progress mt-4">
-                                        <div class="progress-bar l-amber" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
-                                    </div>
-                                    <div class="d-flex bd-highlight mt-4">                                
-                                        <div class="flex-fill bd-highlight">
-                                            <h5 class="mb-0">21,521 <i class="zmdi zmdi-long-arrow-up"></i></h5>
-                                            <small>Today</small>
-                                        </div>
-                                        <div class="flex-fill bd-highlight">
-                                            <h5 class="mb-0">%12.35 <i class="zmdi zmdi-long-arrow-down"></i></h5>
-                                            <small>Last month %</small>
-                                        </div>
-                                    </div>
-                                </div>                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-statistic-4">
+              <div class="align-items-center justify-content-between">
+                <div class="row ">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                    <div class="card-content">
+                      <h5 class="font-15">New Project</h5>
+                      <h2 class="mb-3 font-18">128</h2>
+                      <p class="mb-0"><span class="col-green">18%</span>
+                        Increase</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                    <div class="banner-img">
+                      <img src="{{asset('cssadmin')}}/assets/img/banner/3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="card-statistic-4">
+              <div class="align-items-center justify-content-between">
+                <div class="row ">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                    <div class="card-content">
+                      <h5 class="font-15">Revenue</h5>
+                      <h2 class="mb-3 font-18">$48,697</h2>
+                      <p class="mb-0"><span class="col-green">42%</span> Increase</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                    <div class="banner-img">
+                      <img src="{{asset('cssadmin')}}/assets/img/banner/4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-lg-12">
+          <div class="card ">
+            <div class="card-header">
+              <h4>Revenue chart</h4>
+              <div class="card-header-action">
+                <div class="dropdown">
+                  <a href="#" data-toggle="dropdown" class="btn btn-warning dropdown-toggle">Options</a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item has-icon"><i class="fas fa-eye"></i> View</a>
+                    <a href="#" class="dropdown-item has-icon"><i class="far fa-edit"></i> Edit</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item has-icon text-danger"><i class="far fa-trash-alt"></i>
+                      Delete</a>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary">View All</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-9">
+                  <div id="chart1"></div>
+                  <div class="row mb-0">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                      <div class="list-inline text-center">
+                        <div class="list-inline-item p-r-30"><i data-feather="arrow-up-circle"
+                            class="col-green"></i>
+                          <h5 class="m-b-0">$675</h5>
+                          <p class="text-muted font-14 m-b-0">Weekly Earnings</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                      <div class="list-inline text-center">
+                        <div class="list-inline-item p-r-30"><i data-feather="arrow-down-circle"
+                            class="col-orange"></i>
+                          <h5 class="m-b-0">$1,587</h5>
+                          <p class="text-muted font-14 m-b-0">Monthly Earnings</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                      <div class="list-inline text-center">
+                        <div class="list-inline-item p-r-30"><i data-feather="arrow-up-circle"
+                            class="col-green"></i>
+                          <h5 class="mb-0 m-b-0">$45,965</h5>
+                          <p class="text-muted font-14 m-b-0">Yearly Earnings</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="row mt-5">
+                    <div class="col-7 col-xl-7 mb-3">Total customers</div>
+                    <div class="col-5 col-xl-5 mb-3">
+                      <span class="text-big">8,257</span>
+                      <sup class="col-green">+09%</sup>
+                    </div>
+                    <div class="col-7 col-xl-7 mb-3">Total Income</div>
+                    <div class="col-5 col-xl-5 mb-3">
+                      <span class="text-big">$9,857</span>
+                      <sup class="text-danger">-18%</sup>
+                    </div>
+                    <div class="col-7 col-xl-7 mb-3">Project completed</div>
+                    <div class="col-5 col-xl-5 mb-3">
+                      <span class="text-big">28</span>
+                      <sup class="col-green">+16%</sup>
+                    </div>
+                    <div class="col-7 col-xl-7 mb-3">Total expense</div>
+                    <div class="col-5 col-xl-5 mb-3">
+                      <span class="text-big">$6,287</span>
+                      <sup class="col-green">+09%</sup>
+                    </div>
+                    <div class="col-7 col-xl-7 mb-3">New Customers</div>
+                    <div class="col-5 col-xl-5 mb-3">
+                      <span class="text-big">684</span>
+                      <sup class="col-green">+22%</sup>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Chart</h4>
+            </div>
+            <div class="card-body">
+              <div id="chart4" class="chartsh"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Chart</h4>
+            </div>
+            <div class="card-body">
+              <div class="summary">
+                <div class="summary-chart active" data-tab-group="summary-tab" id="summary-chart">
+                  <div id="chart3" class="chartsh"></div>
+                </div>
+                <div data-tab-group="summary-tab" id="summary-text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Chart</h4>
+            </div>
+            <div class="card-body">
+              <div id="chart2" class="chartsh"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h4>Assign Task Table</h4>
+              <div class="card-header-form">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                      <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <tr>
+                    <th class="text-center">
+                      <div class="custom-checkbox custom-checkbox-table custom-control">
+                        <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
+                          class="custom-control-input" id="checkbox-all">
+                        <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
+                      </div>
+                    </th>
+                    <th>Task Name</th>
+                    <th>Members</th>
+                    <th>Task Status</th>
+                    <th>Assigh Date</th>
+                    <th>Due Date</th>
+                    <th>Priority</th>
+                    <th>Action</th>
+                  </tr>
+                  <tr>
+                    <td class="p-0 text-center">
+                      <div class="custom-checkbox custom-control">
+                        <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                          id="checkbox-1">
+                        <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>Create a mobile app</td>
+                    <td class="text-truncate">
+                      <ul class="list-unstyled order-list m-b-0 m-b-0">
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-8.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="Wildan Ahdian"></li>
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-9.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="John Deo"></li>
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-10.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="Sarah Smith"></li>
+                        <li class="avatar avatar-sm"><span class="badge badge-primary">+4</span></li>
+                      </ul>
+                    </td>
+                    <td class="align-middle">
+                      <div class="progress-text">50%</div>
+                      <div class="progress" data-height="6">
+                        <div class="progress-bar bg-success" data-width="50%"></div>
+                      </div>
+                    </td>
+                    <td>2018-01-20</td>
+                    <td>2019-05-28</td>
+                    <td>
+                      <div class="badge badge-success">Low</div>
+                    </td>
+                    <td><a href="#" class="btn btn-outline-primary">Detail</a></td>
+                  </tr>
+                  <tr>
+                    <td class="p-0 text-center">
+                      <div class="custom-checkbox custom-control">
+                        <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                          id="checkbox-2">
+                        <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>Redesign homepage</td>
+                    <td class="text-truncate">
+                      <ul class="list-unstyled order-list m-b-0 m-b-0">
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-1.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="Wildan Ahdian"></li>
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-2.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="John Deo"></li>
+                        <li class="avatar avatar-sm"><span class="badge badge-primary">+2</span></li>
+                      </ul>
+                    </td>
+                    <td class="align-middle">
+                      <div class="progress-text">40%</div>
+                      <div class="progress" data-height="6">
+                        <div class="progress-bar bg-danger" data-width="40%"></div>
+                      </div>
+                    </td>
+                    <td>2017-07-14</td>
+                    <td>2018-07-21</td>
+                    <td>
+                      <div class="badge badge-danger">High</div>
+                    </td>
+                    <td><a href="#" class="btn btn-outline-primary">Detail</a></td>
+                  </tr>
+                  <tr>
+                    <td class="p-0 text-center">
+                      <div class="custom-checkbox custom-control">
+                        <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                          id="checkbox-3">
+                        <label for="checkbox-3" class="custom-control-label">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>Backup database</td>
+                    <td class="text-truncate">
+                      <ul class="list-unstyled order-list m-b-0 m-b-0">
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-3.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="Wildan Ahdian"></li>
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-4.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="John Deo"></li>
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-5.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="Sarah Smith"></li>
+                        <li class="avatar avatar-sm"><span class="badge badge-primary">+3</span></li>
+                      </ul>
+                    </td>
+                    <td class="align-middle">
+                      <div class="progress-text">55%</div>
+                      <div class="progress" data-height="6">
+                        <div class="progress-bar bg-purple" data-width="55%"></div>
+                      </div>
+                    </td>
+                    <td>2019-07-25</td>
+                    <td>2019-08-17</td>
+                    <td>
+                      <div class="badge badge-info">Average</div>
+                    </td>
+                    <td><a href="#" class="btn btn-outline-primary">Detail</a></td>
+                  </tr>
+                  <tr>
+                    <td class="p-0 text-center">
+                      <div class="custom-checkbox custom-control">
+                        <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                          id="checkbox-4">
+                        <label for="checkbox-4" class="custom-control-label">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>Android App</td>
+                    <td class="text-truncate">
+                      <ul class="list-unstyled order-list m-b-0 m-b-0">
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-7.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="John Deo"></li>
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-8.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="Sarah Smith"></li>
+                        <li class="avatar avatar-sm"><span class="badge badge-primary">+4</span></li>
+                      </ul>
+                    </td>
+                    <td class="align-middle">
+                      <div class="progress-text">70%</div>
+                      <div class="progress" data-height="6">
+                        <div class="progress-bar" data-width="70%"></div>
+                      </div>
+                    </td>
+                    <td>2018-04-15</td>
+                    <td>2019-07-19</td>
+                    <td>
+                      <div class="badge badge-success">Low</div>
+                    </td>
+                    <td><a href="#" class="btn btn-outline-primary">Detail</a></td>
+                  </tr>
+                  <tr>
+                    <td class="p-0 text-center">
+                      <div class="custom-checkbox custom-control">
+                        <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                          id="checkbox-5">
+                        <label for="checkbox-5" class="custom-control-label">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>Logo Design</td>
+                    <td class="text-truncate">
+                      <ul class="list-unstyled order-list m-b-0 m-b-0">
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-9.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="Wildan Ahdian"></li>
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-10.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="John Deo"></li>
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-2.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="Sarah Smith"></li>
+                        <li class="avatar avatar-sm"><span class="badge badge-primary">+2</span></li>
+                      </ul>
+                    </td>
+                    <td class="align-middle">
+                      <div class="progress-text">45%</div>
+                      <div class="progress" data-height="6">
+                        <div class="progress-bar bg-cyan" data-width="45%"></div>
+                      </div>
+                    </td>
+                    <td>2017-02-24</td>
+                    <td>2018-09-06</td>
+                    <td>
+                      <div class="badge badge-danger">High</div>
+                    </td>
+                    <td><a href="#" class="btn btn-outline-primary">Detail</a></td>
+                  </tr>
+                  <tr>
+                    <td class="p-0 text-center">
+                      <div class="custom-checkbox custom-control">
+                        <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input"
+                          id="checkbox-6">
+                        <label for="checkbox-6" class="custom-control-label">&nbsp;</label>
+                      </div>
+                    </td>
+                    <td>Ecommerce website</td>
+                    <td class="text-truncate">
+                      <ul class="list-unstyled order-list m-b-0 m-b-0">
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-8.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="Wildan Ahdian"></li>
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-9.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="John Deo"></li>
+                        <li class="team-member team-member-sm"><img class="rounded-circle"
+                            src="{{asset('cssadmin')}}/assets/img/users/user-10.png" alt="user" data-toggle="tooltip" title=""
+                            data-original-title="Sarah Smith"></li>
+                        <li class="avatar avatar-sm"><span class="badge badge-primary">+4</span></li>
+                      </ul>
+                    </td>
+                    <td class="align-middle">
+                      <div class="progress-text">30%</div>
+                      <div class="progress" data-height="6">
+                        <div class="progress-bar bg-orange" data-width="30%"></div>
+                      </div>
+                    </td>
+                    <td>2018-01-20</td>
+                    <td>2019-05-28</td>
+                    <td>
+                      <div class="badge badge-info">Average</div>
+                    </td>
+                    <td><a href="#" class="btn btn-outline-primary">Detail</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-12 col-xl-6">
+          <!-- Support tickets -->
+          <div class="card">
+            <div class="card-header">
+              <h4>Support Ticket</h4>
+              <form class="card-header-form">
+                <input type="text" name="search" class="form-control" placeholder="Search">
+              </form>
+            </div>
+            <div class="card-body">
+              <div class="support-ticket media pb-1 mb-3">
+                <img src="{{asset('cssadmin')}}/assets/img/users/user-1.png" class="user-img mr-2" alt="">
+                <div class="media-body ml-3">
+                  <div class="badge badge-pill badge-success mb-1 float-right">Feature</div>
+                  <span class="font-weight-bold">#89754</span>
+                  <a href="javascript:void(0)">Please add advance table</a>
+                  <p class="my-1">Hi, can you please add new table for advan...</p>
+                  <small class="text-muted">Created by <span class="font-weight-bold font-13">John
+                      Deo</span>
+                    &nbsp;&nbsp; - 1 day ago</small>
+                </div>
+              </div>
+              <div class="support-ticket media pb-1 mb-3">
+                <img src="{{asset('cssadmin')}}/assets/img/users/user-2.png" class="user-img mr-2" alt="">
+                <div class="media-body ml-3">
+                  <div class="badge badge-pill badge-warning mb-1 float-right">Bug</div>
+                  <span class="font-weight-bold">#57854</span>
+                  <a href="javascript:void(0)">Select item not working</a>
+                  <p class="my-1">please check select item in advance form not work...</p>
+                  <small class="text-muted">Created by <span class="font-weight-bold font-13">Sarah
+                      Smith</span>
+                    &nbsp;&nbsp; - 2 day ago</small>
+                </div>
+              </div>
+              <div class="support-ticket media pb-1 mb-3">
+                <img src="{{asset('cssadmin')}}/assets/img/users/user-3.png" class="user-img mr-2" alt="">
+                <div class="media-body ml-3">
+                  <div class="badge badge-pill badge-primary mb-1 float-right">Query</div>
+                  <span class="font-weight-bold">#85784</span>
+                  <a href="javascript:void(0)">Are you provide template in Angular?</a>
+                  <p class="my-1">can you provide template in latest angular 8.</p>
+                  <small class="text-muted">Created by <span class="font-weight-bold font-13">Ashton Cox</span>
+                    &nbsp;&nbsp; -2 day ago</small>
+                </div>
+              </div>
+              <div class="support-ticket media pb-1 mb-3">
+                <img src="{{asset('cssadmin')}}/assets/img/users/user-6.png" class="user-img mr-2" alt="">
+                <div class="media-body ml-3">
+                  <div class="badge badge-pill badge-info mb-1 float-right">Enhancement</div>
+                  <span class="font-weight-bold">#25874</span>
+                  <a href="javascript:void(0)">About template page load speed</a>
+                  <p class="my-1">Hi, John, can you work on increase page speed of template...</p>
+                  <small class="text-muted">Created by <span class="font-weight-bold font-13">Hasan
+                      Basri</span>
+                    &nbsp;&nbsp; -3 day ago</small>
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="card-footer card-link text-center small ">View
+              All</a>
+          </div>
+          <!-- Support tickets -->
+        </div>
+        <div class="col-md-6 col-lg-12 col-xl-6">
+          <div class="card">
+            <div class="card-header">
+              <h4>Projects Payments</h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Client Name</th>
+                      <th>Date</th>
+                      <th>Payment Method</th>
+                      <th>Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>John Doe </td>
+                      <td>11-08-2018</td>
+                      <td>NEFT</td>
+                      <td>$258</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Cara Stevens
+                      </td>
+                      <td>15-07-2018</td>
+                      <td>PayPal</td>
+                      <td>$125</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>
+                        Airi Satou
+                      </td>
+                      <td>25-08-2018</td>
+                      <td>RTGS</td>
+                      <td>$287</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>
+                        Angelica Ramos
+                      </td>
+                      <td>01-05-2018</td>
+                      <td>CASH</td>
+                      <td>$170</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>
+                        Ashton Cox
+                      </td>
+                      <td>18-04-2018</td>
+                      <td>NEFT</td>
+                      <td>$970</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>
+                        John Deo
+                      </td>
+                      <td>22-11-2018</td>
+                      <td>PayPal</td>
+                      <td>$854</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>
+                        Hasan Basri
+                      </td>
+                      <td>07-09-2018</td>
+                      <td>Cash</td>
+                      <td>$128</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+  </div>
 @endsection

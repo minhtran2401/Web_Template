@@ -1,8 +1,11 @@
 @extends('admin.layoutadmin')
 @section('pagetitle', "THÊM LOẠI MỚI")
 @section('main')
-    <section class="content">
-    <div class="">
+<div class="main-content" style="min-height: 659px;">
+    <section class="section">
+      <div class="section-body">
+            <!-- add content here -->
+               <div class="cart">
         <div class="block-header">
             <div class="row">
                 <div class="col-lg-7 col-md-6 col-sm-12">
@@ -11,17 +14,14 @@
                         <li class="breadcrumb-item"><a href="../admin"><i class="zmdi zmdi-home"></i> MiNhaTi</a></li>
                         <li class="breadcrumb-item active">THÊM LOẠI MỚI</li>
                     </ul>
-                    <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
                 </div>
-                <div class="col-lg-5 col-md-6 col-sm-12">                
-                    <button class="btn btn-primary btn-icon float-right right_icon_toggle_btn" type="button"><i class="zmdi zmdi-arrow-right"></i></button>
-                </div>
+               
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container>
           
                
-            <div class="body">
+            <div class="cart">
                 <form id="form_validation" method="post" action="{{route('temp_typeBE.store')}}" >
                     {{csrf_field()}}
                     <div class="form-group form-float">
@@ -29,24 +29,32 @@
                     </div>
                   
                     <div class="form-group">
-                        <div class="radio inlineblock m-r-20">
+                        <div class="form-check form-check-inline">
                             <input type="radio" name="Anhien" id="Hien" class="with-gap" value="1" checked="" >
-                            <label for="Hien">Hiện</label>
+                            <label class="form-check-label" for="Hien">Hiện</label>
                         </div>                                
-                        <div class="radio inlineblock">
+                        <div class="form-check form-check-inline">
                             <input type="radio" name="Anhien" id="An" class="with-gap" value="0" >
-                            <label for="An">Ẩn</label>
+                            <label class="form-check-label" for="An">Ẩn</label>
                         </div>
                     </div>
 
-                    <button class="btn btn-raised btn-primary waves-effect" type="submit">SUBMIT</button>
+              
+                        
+                    
+                      </div>
+                    <button class="btn btn-raised btn-primary waves-effect" type="submit">LƯU DATABASE</button>
+                    <button class="btn btn-danger" type="reset">HỦY</button>
                 </form>
 
                 
             </div>
         </div>
     </div>
-</section>
+      </div>
+    </section>
+   
+  </div>
 @endsection
 
 

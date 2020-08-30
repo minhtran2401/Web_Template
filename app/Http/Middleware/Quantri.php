@@ -17,7 +17,7 @@ class Quantri
         if(auth()->user()->idgroup == 1){
             return $next($request);
         }       
-        return redirect('/logout')->with('loi','Bạn không có quyền admin');
+        return redirect('login')->with('loi','Bạn không có quyền admin');
    }
    
 }

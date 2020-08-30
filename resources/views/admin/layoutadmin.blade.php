@@ -1,246 +1,327 @@
-<!doctype html>
-<html class="no-js " lang="vi">
+<!DOCTYPE html>
+<html lang="en">
 
 
+<!-- index.html  21 Nov 2019 03:44:50 GMT -->
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-<meta name="description" content="">
-<title>@yield('pagetitle')</title>
-
-
-<link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
-<link rel="stylesheet" href="{{asset('assets')}}/plugins/jquery-datatable/dataTables.bootstrap4.min.css">
-<link rel="stylesheet" href="{{asset('assets')}}/plugins/fullcalendar/fullcalendar.min.css">
-
-<link rel="stylesheet" href="{{asset('assets')}}/plugins/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="{{asset('assets')}}/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css"/>
-<link rel="stylesheet" href="{{asset('assets')}}/plugins/charts-c3/plugin.css"/>
-<link rel="stylesheet" href="{{asset('assets')}}/plugins/bootstrap-select/css/bootstrap-select.css" />
-
-<link rel="stylesheet" href="{{asset('assets')}}/plugins/morrisjs/morris.min.css" />
-<!-- Custom Css -->
-
-<link rel="stylesheet" href="{{asset('assets')}}/css/style.min.css">
-
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>@yield('pagetitle')</title>
+  <!--calendar-->
+  <link rel="stylesheet" href="{{asset('cssadmin')}}/assets/css/app.min.css">
+  <link rel="stylesheet" href="{{asset('cssadmin')}}/assets/bundles/datatables/datatables.min.css">
+  <link rel="stylesheet" href="{{asset('cssadmin')}}/assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="{{asset('cssadmin')}}/assets/css/style.css">
+  <link rel="stylesheet" href="{{asset('cssadmin')}}/assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="{{asset('cssadmin')}}/assets/css/custom.css">
+  <link rel='shortcut icon' type='image/x-icon' href='{{asset('cssadmin')}}/assets/img/favicon.ico' />
 </head>
 
-<body class="theme-blush">
-
-<!-- Page Loader -->
-<div class="page-loader-wrapper">
-    <div class="loader">
-        <div class="m-t-30"><img class="zmdi-hc-spin" src="{{asset('assets')}}/images/loader.svg" width="48" height="48" alt="Aero"></div>
-        <p>Please wait...</p>
-    </div>
-</div>
-
-<!-- Overlay For Sidebars -->
-<div class="overlay"></div>
-
-<!-- Main Search -->
-<div id="search">
-    <button id="close" type="button" class="close btn btn-primary btn-icon btn-icon-mini btn-round">x</button>
-    <form>
-      <input type="search" value="" placeholder="Search..." />
-      <button type="submit" class="btn btn-primary">Search</button>
-    </form>
-</div>
-
-<!-- Right Icon menu Sidebar -->
-<?=View::make('admin.rightmenu')?>
-
-
-<!-- Left Sidebar -->
-<?=View::make('admin.leftmenu')?>
-
-<!-- Setting Right Sidebar -->
-<aside id="rightsidebar" class="right-sidebar">
-    <ul class="nav nav-tabs sm">
-        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#setting"><i class="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
-        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#chat"><i class="zmdi zmdi-comments"></i></a></li>
-    </ul>
-    <div class="tab-content">
-        <div class="tab-pane active" id="setting">
-            <div class="slim_scroll">
-                <div class="card">
-                    <h6>Theme Option</h6>
-                    <div class="light_dark">
-                        <div class="radio">
-                            <input type="radio" name="radio1" id="lighttheme" value="light" checked="">
-                            <label for="lighttheme">Light Mode</label>
-                        </div>
-                        <div class="radio mb-0">
-                            <input type="radio" name="radio1" id="darktheme" value="dark">
-                            <label for="darktheme">Dark Mode</label>
-                        </div>
-                    </div>
+<body>
+  <div class="loader"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar sticky">
+        <div class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn"> <i data-feather="align-justify"></i></a></li>
+            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                <i data-feather="maximize"></i>
+              </a></li>
+            <li>
+              <form class="form-inline mr-auto">
+                <div class="search-element">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200">
+                  <button class="btn" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
                 </div>
-                <div class="card">
-                    <h6>Color Skins</h6>
-                    <ul class="choose-skin list-unstyled">
-                        <li data-theme="purple"><div class="purple"></div></li>
-                        <li data-theme="blue"><div class="blue"></div></li>
-                        <li data-theme="cyan"><div class="cyan"></div></li>
-                        <li data-theme="green"><div class="green"></div></li>
-                        <li data-theme="orange"><div class="orange"></div></li>
-                        <li data-theme="blush" class="active"><div class="blush"></div></li>
-                    </ul>                                        
-                </div>
-                <div class="card">
-                    <h6>General Settings</h6>
-                    <ul class="setting-list list-unstyled">
-                        <li>
-                            <div class="checkbox">
-                                <input id="checkbox1" type="checkbox">
-                                <label for="checkbox1">Report Panel Usage</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                                <input id="checkbox2" type="checkbox" checked="">
-                                <label for="checkbox2">Email Redirect</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                                <input id="checkbox3" type="checkbox" checked="">
-                                <label for="checkbox3">Notifications</label>
-                            </div>                        
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                                <input id="checkbox4" type="checkbox">
-                                <label for="checkbox4">Auto Updates</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                                <input id="checkbox5" type="checkbox" checked="">
-                                <label for="checkbox5">Offline</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkbox">
-                                <input id="checkbox6" type="checkbox" checked="">
-                                <label for="checkbox6">Location Permission</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>                
-            </div>                
-        </div>       
-        <div class="tab-pane right_chat" id="chat">
-            <div class="slim_scroll">
-                <div class="card">
-                    <ul class="list-unstyled">
-                        <li class="online">
-                            <a href="javascript:void(0);">
-                                <div class="media">
-                                    <img class="media-object " src="{{asset('assets')}}/images/xs/avatar4.jpg" alt="">
-                                    <div class="media-body">
-                                        <span class="name">Sophia <small class="float-right">11:00AM</small></span>
-                                        <span class="message">There are many variations of passages of Lorem Ipsum available</span>
-                                        <span class="badge badge-outline status"></span>
-                                    </div>
-                                </div>
-                            </a>                            
-                        </li>
-                        <li class="online">
-                            <a href="javascript:void(0);">
-                                <div class="media">
-                                    <img class="media-object " src="{{asset('assets')}}/images/xs/avatar5.jpg" alt="">
-                                    <div class="media-body">
-                                        <span class="name">Grayson <small class="float-right">11:30AM</small></span>
-                                        <span class="message">All the Lorem Ipsum generators on the</span>
-                                        <span class="badge badge-outline status"></span>
-                                    </div>
-                                </div>
-                            </a>                            
-                        </li>
-                        <li class="offline">
-                            <a href="javascript:void(0);">
-                                <div class="media">
-                                    <img class="media-object " src="{{asset('assets')}}/images/xs/avatar2.jpg" alt="">
-                                    <div class="media-body">
-                                        <span class="name">Isabella <small class="float-right">11:31AM</small></span>
-                                        <span class="message">Contrary to popular belief, Lorem Ipsum</span>
-                                        <span class="badge badge-outline status"></span>
-                                    </div>
-                                </div>
-                            </a>                            
-                        </li>
-                        <li class="me">
-                            <a href="javascript:void(0);">
-                                <div class="media">
-                                    <img class="media-object " src="{{asset('assets')}}/images/xs/avatar1.jpg" alt="">
-                                    <div class="media-body">
-                                        <span class="name">John <small class="float-right">05:00PM</small></span>
-                                        <span class="message">It is a long established fact that a reader</span>
-                                        <span class="badge badge-outline status"></span>
-                                    </div>
-                                </div>
-                            </a>                            
-                        </li>
-                        <li class="online">
-                            <a href="javascript:void(0);">
-                                <div class="media">
-                                    <img class="media-object " src="{{asset('assets')}}/images/xs/avatar3.jpg" alt="">
-                                    <div class="media-body">
-                                        <span class="name">Alexander <small class="float-right">06:08PM</small></span>
-                                        <span class="message">Richard McClintock, a Latin professor</span>
-                                        <span class="badge badge-outline status"></span>
-                                    </div>
-                                </div>
-                            </a>                            
-                        </li>                        
-                    </ul>
-                </div>
-            </div>
+              </form>
+            </li>
+          </ul>
         </div>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i>
+              <span class="badge headerBadge1">
+                6 </span> </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+              <div class="dropdown-header">
+                Messages
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-message">
+                {{-- <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
+											text-white"> <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-1.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">John
+                      Deo</span>
+                    <span class="time messege-text">Please check your mail !!</span>
+                    <span class="time">2 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-2.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
+                      Smith</span> <span class="time messege-text">Request for leave
+                      application</span>
+                    <span class="time">5 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-5.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jacob
+                      Ryan</span> <span class="time messege-text">Your payment invoice is
+                      generated.</span> <span class="time">12 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-4.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Lina
+                      Smith</span> <span class="time messege-text">hii John, I have upload
+                      doc
+                      related to task.</span> <span class="time">30
+                      Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-3.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jalpa
+                      Joshi</span> <span class="time messege-text">Please do as specify.
+                      Let me
+                      know if you have any query.</span> <span class="time">1
+                      Days Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/img/users/user-2.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
+                      Smith</span> <span class="time messege-text">Client Requirements</span>
+                    <span class="time">2 Days Ago</span>
+                  </span>
+                </a> --}}
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i>
+            </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+              <div class="dropdown-header">
+                Notifications
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class="dropdown-item dropdown-item-unread"> <span
+                    class="dropdown-item-icon bg-primary text-white"> <i class="fas
+												fa-code"></i>
+                  </span> <span class="dropdown-item-desc"> Template update is
+                    available now! <span class="time">2 Min
+                      Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="far
+												fa-user"></i>
+                  </span> <span class="dropdown-item-desc"> <b>You</b> and <b>Dedik
+                      Sugiharto</b> are now friends <span class="time">10 Hours
+                      Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-success text-white"> <i
+                      class="fas
+												fa-check"></i>
+                  </span> <span class="dropdown-item-desc"> <b>Kusnaedi</b> has
+                    moved task <b>Fix bug header</b> to <b>Done</b> <span class="time">12
+                      Hours
+                      Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-danger text-white"> <i
+                      class="fas fa-exclamation-triangle"></i>
+                  </span> <span class="dropdown-item-desc"> Low disk space. Let's
+                    clean it! <span class="time">17 Hours Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="fas
+												fa-bell"></i>
+                  </span> <span class="dropdown-item-desc"> Welcome to Otika
+                    template! <span class="time">Yesterday</span>
+                  </span>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="{{asset('cssadmin')}}/assets/img/users/{{ Auth::user()->avatar }}"
+                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+            <div class="dropdown-menu dropdown-menu-right pullDown">
+              <div class="dropdown-title">Hello {{ Auth::user()->name }}</div>
+              {{-- <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+										fa-user"></i> Profile
+              </a> <a href="timeline.html" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
+                Activities
+              </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+                Settings
+              </a> --}}
+              <div class="dropdown-divider"></div>
+              <a href="{{ route('logout') }}" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+        {{-- menu --}}
+        
+
+      <?=View::make('admin.leftmenu')?>
+
+
+        {{-- menu --}}
+
+
+      <!-- Main Content -->
+            @yield('main')
+            <div class="settingSidebar">
+                <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
+                </a>
+                <div class="settingSidebar-body ps-container ps-theme-default">
+                  <div class=" fade show active">
+                    <div class="setting-panel-header">Setting Panel
+                    </div>
+                    <div class="p-15 border-bottom">
+                      <h6 class="font-medium m-b-10">Select Layout</h6>
+                      <div class="selectgroup layout-color w-50">
+                        <label class="selectgroup-item">
+                          <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked>
+                          <span class="selectgroup-button">Light</span>
+                        </label>
+                        <label class="selectgroup-item">
+                          <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout">
+                          <span class="selectgroup-button">Dark</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="p-15 border-bottom">
+                      <h6 class="font-medium m-b-10">Sidebar Color</h6>
+                      <div class="selectgroup selectgroup-pills sidebar-color">
+                        <label class="selectgroup-item">
+                          <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar">
+                          <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                            data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
+                        </label>
+                        <label class="selectgroup-item">
+                          <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked>
+                          <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                            data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="p-15 border-bottom">
+                      <h6 class="font-medium m-b-10">Color Theme</h6>
+                      <div class="theme-setting-options">
+                        <ul class="choose-theme list-unstyled mb-0">
+                          <li title="white" class="active">
+                            <div class="white"></div>
+                          </li>
+                          <li title="cyan">
+                            <div class="cyan"></div>
+                          </li>
+                          <li title="black">
+                            <div class="black"></div>
+                          </li>
+                          <li title="purple">
+                            <div class="purple"></div>
+                          </li>
+                          <li title="orange">
+                            <div class="orange"></div>
+                          </li>
+                          <li title="green">
+                            <div class="green"></div>
+                          </li>
+                          <li title="red">
+                            <div class="red"></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="p-15 border-bottom">
+                      <div class="theme-setting-options">
+                        <label class="m-b-0">
+                          <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                            id="mini_sidebar_setting">
+                          <span class="custom-switch-indicator"></span>
+                          <span class="control-label p-l-10">Mini Sidebar</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="p-15 border-bottom">
+                      <div class="theme-setting-options">
+                        <label class="m-b-0">
+                          <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                            id="sticky_header_setting">
+                          <span class="custom-switch-indicator"></span>
+                          <span class="control-label p-l-10">Sticky Header</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
+                      <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme">
+                        <i class="fas fa-undo"></i> Restore Default
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      <footer class="main-footer">
+        <div class="footer-left " >
+          <a href="#">MiNhaTi made with <span class=text-danger ><i class="fas fa-heart    "></i></span></a></a>
+        </div>
+        <div class="footer-right">
+        </div>
+      </footer>
     </div>
-</aside>
+  </div>
+  <!--calendar-->
+  {{-- <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/bundles/fullcalendar/fullcalendar.min.js"></script>
+  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/page/calendar.js"></script>
 
-<!-- Main Content -->
-
-    @yield('main')
-
-<!-- Jquery Core Js --> 
-<script src="{{asset('assets')}}/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js ( jquery.v3.2.1, Bootstrap4 js) --> 
-<script src="{{asset('assets')}}/bundles/vendorscripts.bundle.js"></script> <!-- slimscroll, waves Scripts Plugin Js -->
-
-<script src="{{asset('assets')}}/bundles/jvectormap.bundle.js"></script> <!-- JVectorMap Plugin Js -->
-<script src="{{asset('assets')}}/bundles/sparkline.bundle.js"></script> <!-- Sparkline Plugin Js -->
-<script src="{{asset('assets')}}/bundles/c3.bundle.js"></script>
-
-<script src="{{asset('assets')}}/bundles/mainscripts.bundle.js"></script>
-<script src="{{asset('assets')}}/js/pages/index.js"></script>
+  <!--datatable-->
+  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/bundles/datatables/datatables.min.js"></script>
+  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/page/datatables.js"></script>
 
 
+  <!-- General JS Scripts -->
+  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/bundles/apexcharts/apexcharts.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/page/index.js"></script>
+  <!-- Template JS File -->
+  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="{{asset('cssadmin')}}/{{asset('cssadmin')}}/assets/js/custom.js"></script> --}}
 
-
-
-
-
-<script src="{{asset('assets')}}bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
-<script src="{{asset('assets')}}bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js --> 
-
-<script src="{{asset('assets')}}bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
-
-
-<script src="{{asset('assets')}}plugins/jquery-validation/jquery.validate.js"></script> <!-- Jquery Validation Plugin Css --> 
-<script src="{{asset('assets')}}plugins/jquery-steps/jquery.steps.js"></script> <!-- JQuery Steps Plugin Js --> 
-
-<script src="{{asset('assets')}}js/pages/forms/form-validation.js"></script> 
-
-@yield('jsc')
-
-
-
-
-
+  <script src="{{asset('cssadmin')}}/assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="{{asset('cssadmin')}}/assets/bundles/datatables/datatables.min.js"></script>
+  <script src="{{asset('cssadmin')}}/assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+  <script src="{{asset('cssadmin')}}/assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="{{asset('cssadmin')}}/assets/js/page/datatables.js"></script>
+  <!-- Template JS File -->
+  <script src="{{asset('cssadmin')}}/assets/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="{{asset('cssadmin')}}/assets/js/custom.js"></script>
+  @yield('jsc')
 </body>
 
 
+<!-- index.html  21 Nov 2019 03:47:04 GMT -->
 </html>

@@ -60,11 +60,6 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::group(['middleware' => ['auth','Quantri']], function () {
     Route::resource('/templateBE', 'TemplateAdminController');
     Route::resource('/temp_typeBE', 'Template_typeAdminController');
-    Route::get('/dashboard', 'AdminController@dashboard')->name('admin');
-Route::get('/admin', 'AdminController@index')->name('admin');
-Route::get('/email', 'AdminController@email')->name('admin');
-Route::get('/chatapp', 'AdminController@chatapp')->name('admin');
-Route::get('/calendar', 'AdminController@lich')->name('admin');
 
    
 });
