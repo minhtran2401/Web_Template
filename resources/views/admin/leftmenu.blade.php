@@ -1,7 +1,7 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
-        <a href="index.html"> <img alt="image" src="{{asset('cssadmin')}}/assets/img/logo.png" class="header-logo" /> 
+      <a href="{{asset('admin')}}"> <img alt="image" src="{{asset('cssadmin')}}/assets/img/logo.png" class="header-logo" /> 
             <span class="logo-name">MiNhaTi</span>
             <span> <h6 class="title" style="font-size: 0.5rem" >{{ Auth::user()->name }} </h6></span>
             <span> <h6 class="title" style="font-size: 0.5rem" >{{ Auth::user()->idgroup==1? "Admin " : "Hacker" }}     <a href="{{ route('logout') }}"> <i class="fas fa-power-off text-danger" alt="Đăng xuất" ></i> </a></h6></span>

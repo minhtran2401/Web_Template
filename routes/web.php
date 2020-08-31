@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'homeController@index');
-Route::get('/blankpage', 'homeController@blankpage');
+Route::get('/alert', 'homeController@blankpage');
+Route::get('/home', 'homeController@homepage');
+
 
 Route::get('/contact', function () {
     return view('contact');

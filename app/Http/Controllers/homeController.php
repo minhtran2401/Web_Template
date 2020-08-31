@@ -13,4 +13,7 @@ class homeController extends Controller
     public function blankpage(){
         return view ("blankpage");
     }
+    public function homepage(){
+        return view ("homepage");
+    }
 }

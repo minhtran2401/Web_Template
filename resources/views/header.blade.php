@@ -64,10 +64,10 @@
             </div>
             <div class="modal-body">
                 <p>Chúng tôi nhận thấy bạn đang cố truy cập vào hệ thống quản trị wesite của chúng tôi mà chưa được sự cho phép của MiNhaTi!</p>
-                <p>Nếu còn tiếp tục, bạn sẽ nhận hình phạt từ ban quản trị, mong bạn hợp tác.</p>
+                <p>Nếu còn tiếp tục, bạn sẽ phải chịu sự trừng phạt của pháp luật </p>
                 <form>
-                    <a href="{{action("homeController@blankpage")}}"><button type="button" class="btn btn-danger">Tao Thích</button></a>
-                    <button data-dismiss="modal" aria-hidden="true" type="button" class="btn btn-primary float-right">Đã Hiểu</button>
+                    <a href="{{action("homeController@blankpage")}}"><button type="button" class="btn btn-danger"><i class="fas fa-exclamation-triangle"></i>                        Tiếp Tục Truy Cập</button></a>
+                    <button data-dismiss="modal" aria-hidden="true" type="button" class="btn btn-primary float-right"> <i class="fa fa-check" aria-hidden="true"></i> Đã Hiểu</button>
                 </form>
             </div>
         </div>

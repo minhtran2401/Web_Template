@@ -1,73 +1,78 @@
-@section("header")
-@section('pagetitle', 'LOGO | KÍCH VỘI')
-@include("header")
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Content Wrapper. Contains page content -->
-<div class="container pt-30">
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        500 Error Page
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Examples</a></li>
-        <li class="active">500 error</li>
-      </ol>
-    </section>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
 
-    <!-- Main content -->
-    <section class="content">
+  <style>
+    .box{
+      padding: 1%;
+      font-size: 0.8rem;
+width: 20%;
+      margin-left: 40%;
+      border:1px solid black;
+      border-radius: 10px;
+      -moz-box-shadow:    inset 0 0 0px #000000;
+      -webkit-box-shadow: inset 0 0 5px #000000;
+        box-shadow:         inset 0 0 8px #000000;
+    }
 
-      <div class="error-page">
-        <h2 class="headline text-red">500</h2>
+    ul li {
+      display: inline
+    }
+  </style>
 
-        <div class="error-content">
-          <h3><i class="fa fa-warning text-red"></i> =)))! KÍCH NHÉ EM TROAI.</h3>
+  <body>
 
-          <p>
-            Ồ, MÌNH BIẾT BẠN ĐẤY.
-            KÍCH VỘI NÊN RA ĐẢO RỒI <a href="../../index.html"></a>!! TÌM KIẾM CÁI GÌ ĐI AE.
-          </p>
-
-          <form class="search-form">
-            <div class="input-group">
-              <input type="text" name="search" class="form-control" placeholder="Search">
-
-              <div class="input-group-btn">
-                <button type="submit" name="submit" class="btn btn-danger btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </div>
-            </div>
-            <!-- /.input-group -->
-          </form>
-        </div>
+    <div class="container">
+      <div style="font-weight: bold" class="header text-center " >
+        TỔNG CỤC CẢNH SÁT PHÒNG, CHỐNG TỘI PHẠM <br>
+        CỤC CẢNH SÁT PHÒNG, CHỐNG TỘI PHẠM SỬ DỤNG CÔNG NGHỆ CAO
       </div>
-      <!-- /.error-page -->
-
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-          <!-- js placed at the end of the document so the pages load faster -->
-          <script src="assets/js/jquery.min.js"></script>
-          <script src="assets/js/popper.min.js"></script>
-          <script src="assets/js/bootstrap.min.js"></script>
-          <!-- Portfolio -->
-          <script src="assets/js/jquery.magnific-popup.min.js"></script>
-          <script src="assets/js/isotope.js"></script>
-          <!-- Carousel -->
-          <script src="assets/js/slick.min.js"></script> 
-          <script src="assets/js/slick.init.js"></script> 
-          <!-- CONTACT -->
-          <script src="assets/js/contact.js"></script> 
-          <!--custom script-->
-          <script src="assets/js/app.js"></script>
+      <br>
+      <div class="row text-center ">
+      <div class="col-sm-12" >
+        <img src="{{asset('assets')}}/images/c50.png" height="200px" width="170px" alt="">
         </div>
-      </body>
-  
-  
-  <!-- contact14-->
-  </html>
+    </div>
+    <div class="header text-center"> <b style="font-size: 1.5rem" >CẢNH BÁO</b> </div>
+    <div style="font-weight: 400" class="text-center"  > <p> 
+        Việc cố ý truy cập trái phép trang web mà chưa có sự đồng ý của người khác là vi phạm pháp luật <br>
+         quy định tại Điều 289 Bộ Luật Hình Sự 2015 Cộng Hòa Xã Hội chủ nghĩa Việt Nam 
+        
+        <p>Cơ quan công an sẽ lưu lại log truy cập này để tập hợp xử lý !</p>  
+    </p> </div> <br>
+      <div class="header text-center " >
+        <p style="font-size:11pt" > Mọi thông tin tố giác tội phạm có liên quan xin gửi về <br>
+          Cục Cảnh Sát PCTP sử dụng Công nghệ cao, số 47 Phạm Văn Đồng, Cầu Giấy, Hà Nội, Email: C50@canhsat.vn - Điện thoại 069.21161 hoặc 069.21154
+        </p>  
+      </div>    
+      <div class="row text-center ">
+        <div class="col-sm-12" >
+              <div class="box">
+                      <b>Your ip Address :</b>
+                     <p> 172.277.25.68 </p>
+                     <b>Your OS :</b>
+                     <p> Windows 10 </p>
+                     <b>Your Country :</b>
+                     <p> Vietnam </p>
+                     <b>Your Browser :</b>
+                     <p> <i class="fa fa-chrome" aria-hidden="true"></i> Crome 29.0 </p>
+              </div>
+          </div>
+      </div>
+  </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
